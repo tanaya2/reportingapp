@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Page title</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+    
+    <!-- JS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="javascript" href="script.js">
+    
+    <!-- jQuery
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script src="jquery-3.5.1.min.js"></script>
+    
+
+    <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+
+<body>
+<header>    
+
+</header>
+    <script>
+    $(document).ready(function(){
+      $("button").click(function(){
+        $("p").toggle();
+      });
+    });
+        
+        jQuery(function(){
+    jQuery('.showSingle').click(function(){
+       var target = $(this).attr('target');
+        $('#div'+target).toggle('.hide');
+    });
+});
+    </script>
+    
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+<div class="buttons">
+    
+<!-- First Question Path A and B -->
+    <div class="container">
+        <div class="row">
+            <div class="twelve column" style="margin-top: 25%" align="center">
+                <h1>I am a</h1>
+            </div>
+        </div>
+    </div>
+<!-- First Question Answer Path A and B -->
+    <div class="container">
+        <div class="row">
+            <!--- First Answer Path A.1 -->
+            <div class="one-half column" style="margin-top: 25%" align="center">
+                <a  class="showSingle" target="1">Survivor</a>
+            </div>
+            <!--- First Answer Path B.1 -->
+            <div class="one-half column" style="margin-top: 25%" align="center">
+                <a  class="showSingle" target="2">Supporter</a>
+            </div>
+        </div>
+                <!--- Target Answer Path A -->
+                <div id="div1" class="targetDiv">
+                    
+        <!--- Second Question Path A -->
+        <div class="row">
+            <div class="twelve column" style="margin-top: 25%" align="center">
+                <h1>I want to</h1>
+            </div>
+        </div> 
+        <div class="row">
+            <!--- Second Answer Path A.3 -->
+            <div class="one-third column" style="margin-top: 25%" align="center">
+                <a  class="showSingle" target="3">Report</a>
+                <!--- Form Goes Here -->
+            </div>
+            <!-- Second Answer Path A.4 -->
+            <div class="one-third column" style="margin-top: 25%" align="center">
+                <a  class="showSingle" target="4">Report Anonymously</a>
+                <!-- Anon Form Goes Here -->
+            </div>
+            <!-- Second Answer Path A.5 -->
+            <div class="one-third column" style="margin-top: 25%" align="center">
+                <a  class="showSingle" target="5">Seek Support</a>
+                <div id="div5" class="targetDiv">Seek Support Text</div>
+            </div> 
+        </div>
+                    
+                <!--- Close Target Answer Path A -->   
+                </div>
+        
+                <!--- Target Answer Path B -->
+                <div id="div2" class="targetDiv">
+                    
+        <!--- Second Question Path B -->
+        <div class="row">
+            <div class="twelve column" style="margin-top: 25%" align="center">
+                <h1>I want to</h1>
+            </div>
+        </div> 
+        <div class="row">
+            <!--- Second Answer Path B.6 -->
+            <div class="one-half column" style="margin-top: 25%" align="center">
+                <a  class="showSingle" target="6">Report</a>
+                <div id="div6" class="targetDiv"></div>
+            </div>
+            <!-- Second Answer Path B.7 -->
+            <div class="one-half column" style="margin-top: 25%" align="center">
+                <a  class="showSingle" target="7">Services</a>
+                <div id="div7" class="targetDiv">Services Text</div>
+            </div>
+        </div>
+                <!--- Close Target Answer Path A -->
+                </div> 
+    </div>
+    
+    <!-- Form -->
+                <div id="div3" class="targetDiv"> 
+    <div class="container">
+        <div class="row">
+            <div class="twelve column" style="margin-top: 25%" align="center">
+                <form>
+                    <!-- Name -->
+                    <input type="text" name="name" placeholder="Name" />
+                    
+                    <!-- Incident Type -->
+                    <label for="incident">Incident type:</label>
+                        <input type="checkbox" id="incident1" name="incident1" value="indecency">
+                        <label for="incident1">Act of Indecency</label>
+                        <input type="checkbox" id="incident2" name="incident2" value="cyber">
+                        <label for="incident2">Cyber Harassment</label>
+                        <input type="checkbox" id="incident3" name="incident3" value="spiking">
+                        <label for="incident3">Drink Spiking</label>
+                        <input type="checkbox" id="incident4" name="incident4" value="image">
+                        <label for="incident4">Intimate Image Abuse</label>
+                        <input type="checkbox" id="incident5" name="incident5" value="data">
+                        <label for="incident5">Intimate Observation or Capturing of Visual Data</label>
+                        <input type="checkbox" id="incident6" name="incident6" value="assault">
+                        <label for="incident6">Sexual Assault</label>
+                        <input type="checkbox" id="incident7" name="incident7" value="harassment">
+                        <label for="incident7">Sexual Harassment</label>
+                        <input type="checkbox" id="incident8" name="incident8" value="other">
+                        <label for="incident8">Other</label>
+                    
+                    <!-- Incident Location -->
+                    <label for="location">Location</label>
+                        <input type="checkbox" id="location1" name="location1" value="campus">
+                        <label for="location1">On-Campus</label>
+                        <input type="checkbox" id="location2" name="location2" value="residence">
+                        <label for="location2">On-Campus Residence</label>
+                        <input type="checkbox" id="location3" name="location3" value="off">
+                        <label for="location3">Off-Campus</label>
+                        <input type="checkbox" id="location4" name="location4" value="placement">
+                        <label for="location4">Placement or Internship</label>
+                        <input type="checkbox" id="location5" name="location5" value="abroad">
+                        <label for="location5">Study Abroad or Exchange</label>
+                        <input type="checkbox" id="location6" name="location6" value="homestay">
+                        <label for="location6">Homestay</label>
+                        <input type="checkbox" id="location7" name="location7" value="other">
+                        <label for="location7">Other</label>
+                    
+                    <!-- Incident Date -->
+                    <label for="incidentDate">Incident Date:</label>
+                        <input type="date" id="incidentDate" name="incidentDate">
+                    
+                    <!-- Support Acquired -->
+                    <label for="involved">Previous support sought regarding incident:</label>
+                        <input type="radio" id="yes" name="support" value="yes">
+                        <label for="yes">Yes</label>
+                        <input type="radio" id="no" name="support" value="no">
+                        <label for="no">No</label>
+                    
+                    <!-- Support Requested -->
+                    <label for="involved">Would you like to be contacted regarding support services:</label>
+                        <input type="radio" id="yes" name="request" value="yes">
+                        <label for="yes">Yes</label>
+                        <input type="radio" id="no" name="request" value="no">
+                        <label for="no">No</label>
+                    
+                    <!-- Afflicted Person Type -->
+                    <label for="person">Person Type:</label>
+                        <input type="checkbox" id="person1" name="person1" value="staff">
+                        <label for="person1">Staff</label>
+                        <input type="checkbox" id="person2" name="person2" value="student">
+                        <label for="person2">Student</label>
+                        <input type="checkbox" id="person3" name="person3" value="other">
+                        <label for="person3">Other</label>
+                    
+                    <!-- Knowledge of Persons Involved -->
+                    <label for="involved">Knowledge of persons involved:</label>
+                        <input type="radio" id="yes" name="involved" value="yes">
+                        <label for="yes">Yes</label>
+                        <input type="radio" id="no" name="involved" value="no">
+                        <label for="no">No</label>
+                    
+                    <!-- Witness -->
+                    <label for="witness">Did anybody witness the incident:</label>
+                        <input type="radio" id="yes" name="witness" value="yes">
+                        <label for="yes">Yes</label>
+                        <input type="radio" id="no" name="witness" value="no">
+                        <label for="no">No</label>
+                    
+                    <!-- Previous Reporting -->
+                    <label for="reported">Incident previously reported elsewhere:</label>
+                        <input type="radio" id="yes" name="reported" value="yes">
+                        <label for="yes">Yes</label>
+                        <input type="radio" id="no" name="reported" value="no">
+                        <label for="no">No</label>            
+
+                    
+                    <!-- Description of Incident -->
+                    <label for="description">Description of Incident</label>
+                        <textarea name="description" rows="10" cols=80%>
+                        Description of the incident
+                        </textarea>   
+                </form>
+            </div>
+        </div>
+    </div>
+                </div>
+    
+    <!-- Anon Form -->
+                <div id="div4" class="targetDiv">
+    <div class="container">
+        <div class="row">
+            <div class="twelve column" style="margin-top: 25%" align="center">
+                <form>
+                    <input type="text" name="report" placeholder="report" /> 
+                    <input type="text" name="anon" placeholder="anon" /> 
+                </form>
+            </div>
+        </div>
+    </div>
+                </div>
+                
+                
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
+
