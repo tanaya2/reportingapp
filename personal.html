@@ -38,10 +38,26 @@
 </head>
 
 <body>
-<header>    
+<header> 
+    
+    <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+        <a href="index.html">Home<body class="home"></body></a>
+        <span id="menu1" class="menuitem menuselected">
+        <a href="#survivorreport">Report</a>
+        </span>
+        <a href=".html">Resources</a>
+        <a href=".html">Placeholder</a>
+        <a href=".html">Placeholder</a>
+    </div>
+    </div>
 
-</header>
-    <script>
+    <span style="font-size:32px;cursor:pointer;font-weight:900;" onclick="openNav()">&#9776; Title</span>
+
+<script>
+
+//buttons
     $(document).ready(function(){
       $("button").click(function(){
         $("p").toggle();
@@ -54,7 +70,9 @@
         $('#div'+target).toggle('.hide');
     });
 });
-    </script>
+    
+</header>
+
     
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -65,197 +83,941 @@
     <div class="container">
         <div class="row">
             <div class="twelve column" style="margin-top: 25%" align="center">
-                <h1>I am a</h1>
+                <h1>I want information for</h1>
             </div>
         </div>
     </div>
+    
 <!-- First Question Answer Path A and B -->
     <div class="container">
         <div class="row">
             <!--- First Answer Path A.1 -->
             <div class="one-half column" style="margin-top: 25%" align="center">
-                <a  class="showSingle" target="1">Survivor</a>
+                <a  class="showSingle" target="1">Survivors</a>
             </div>
-            <!--- First Answer Path B.1 -->
+            <!--- First Answer Path B.2 -->
             <div class="one-half column" style="margin-top: 25%" align="center">
-                <a  class="showSingle" target="2">Supporter</a>
+                <a  class="showSingle" target="2">Supporters</a>
             </div>
         </div>
-                <!--- Target Answer Path A -->
-                <div id="div1" class="targetDiv">
+        
+        <!--- Target Answer Path A.1 -->
+            <div id="div1" class="targetDiv">
                     
         <!--- Second Question Path A -->
         <div class="row">
             <div class="twelve column" style="margin-top: 25%" align="center">
-                <h1>I want to</h1>
+                <h1>I would like to</h1>
             </div>
-        </div> 
+        </div>     
         <div class="row">
-            <!--- Second Answer Path A.3 -->
+            <!--- Second Answer Path A.3 --> 
             <div class="one-third column" style="margin-top: 25%" align="center">
-                <a  class="showSingle" target="3">Report</a>
-                <!--- Form Goes Here -->
+                <a  class="showSingle" target="3">Report an Incident</a>
             </div>
             <!-- Second Answer Path A.4 -->
             <div class="one-third column" style="margin-top: 25%" align="center">
-                <a  class="showSingle" target="4">Report Anonymously</a>
-                <!-- Anon Form Goes Here -->
+                <a  class="showSingle" target="4">Report an Incident Anonymously</a>
             </div>
             <!-- Second Answer Path A.5 -->
             <div class="one-third column" style="margin-top: 25%" align="center">
                 <a  class="showSingle" target="5">Seek Support</a>
-                <div id="div5" class="targetDiv">Seek Support Text</div>
             </div> 
-        </div>
-                    
-                <!--- Close Target Answer Path A -->   
+        </div>            
+            </div>
+        <!--- Close Target Answer Path A -->
+    
+    <!-- Path A Content -->
+        <!-- Second Answer Path A.3 Content Open-->
+            <!-- Survivor Form -->
+            <div id="div3" class="targetDiv">
+                <form>
+                <div class="row" style="margin-top: 10%">
+                    <div class="twelve columns" align="center">
+                        <h3 id="head1"><a name="survivorreport">Reporting Form for Survivors</a></h3>
+                            <p>Please use this form if you are reporting an incident that has occured to you and you wish to report with your name.</p>
+                            <p>Should you require any assistance in the completion of this form please contact UC Welfare at Welfare@canberra.edu.au and the team will be able to assist you.</p>
+                    </div>    
                 </div>
+            <!-- Personal details form section -->
+                <div class="row">
+                    <div class="twelve column" style="margin-top: 10%" align="center">
+                        <h4>Personal Details</h4>
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 5%">
+                    <div class="six columns">
+                        <label for="nameInput">What is your name?</label>
+                        <input class="u-full-width" type="name" placeholder="Name" id="nameInput">
+                    </div>
+                    <div class="six columns">
+                        <label for="emailInput">What is your email?</label>
+                        <input class="u-full-width" type="email" placeholder="Email" id="emailInput">
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 2%">
+                        <div class="six columns">
+                          <label for="identifyInput">How do you identify within the University?</label>
+                          <select class="u-full-width" id="identifyInput">
+                            <option value="Option 1">Staff</option>
+                            <option value="Option 2">Student</option>
+                            <option value="Option 3">Other</option>
+                          </select>
+                        </div>
+                        <div class="six columns">
+                          <label for="occuranceInput">Did this incident happen to you?</label>
+                          <select class="u-full-width" id="occuranceInput">
+                            <option value="Option 1">Yes</option>
+                            <option value="Option 2">No</option>
+                          </select>
+                        </div>
+                </div>
+            <!-- Incident details form section -->
+                    <div class="row">
+                    <div class="twelve column" style="margin-top: 10%" align="center">
+                        <h4>Incident Details</h4>    
+                    </div>
+                    </div>
+                    <div class="row" style="margin-top: 5%">
+                        <div class="six columns">
+                          <label for="incidentInput">What type of incident occured?</label>
+                          <select class="u-full-width" id="incidentInput">
+                            <option value="Option 1">Act of Indecency</option>
+                            <option value="Option 2">Cyber Harassment</option>
+                            <option value="Option 3">Drink Spiking</option>
+                            <option value="Option 4">Intimate Image Abuse</option>
+                            <option value="Option 5">Intimate Observation or Capturing of Visual Data</option>
+                            <option value="Option 6">Sexual Assault</option>
+                            <option value="Option 7">Sexual Harassment</option>
+                            <option value="Option 8">Other</option>
+                          </select>
+                        </div>
+                        <div class="six columns">
+                          <label for="locationInput">Where did the incident take place?</label>
+                          <select class="u-full-width" id="locationInput">
+                            <option value="Option 1">On-Campus</option>
+                            <option value="Option 2">On-Campus Residence</option>
+                            <option value="Option 3">Off-Campus</option>
+                            <option value="Option 4">Placement or Internship</option>
+                            <option value="Option 5">Study Abroad or Exchange</option>
+                            <option value="Option 6">Homestay</option>
+                            <option value="Option 7">Other</option>
+                          </select>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-top: 2%">
+                        <div class="six columns">
+                            <label for="dateInput">What date did the incident occur on?</label>
+                            <input class="u-full-width" type="date" placeholder="Date" id="dateInput">
+                        </div>
+                        <div class="six columns">
+                            <label for="timeInput">What time did the incident occur?</label>
+                            <input class="u-full-width" type="time" placeholder="Time" id="timeInput">
+                        </div>  
+                    </div>
+                    <div class="row" style="margin-top: 2%">
+                        <div class="six columns">
+                            <label for="survivorInput">Do you know the identity of any individuals involved in the incident?</label>
+                            <select class="u-full-width" id="survivorInput">
+                                <option value="Option 1">Yes</option>
+                                <option value="Option 2">No</option>
+                                <option value="Option 3">Other</option>
+                            </select>
+                        </div>
+                        <div class="six columns">
+                            <label for="perpetratorInput">If you know the identity, how does the perpetrator identify with the University?</label>
+                            <select class="u-full-width" id="perpetratorInput">
+                                <option value="Option 1">Staff</option>
+                                <option value="Option 2">Student</option>
+                                <option value="Option 3">Other</option>
+                                <option value="Option 4">Unknown</option>
+                            </select>
+                        </div>
+                    </div>
+                        
+                    <div class="row" style="margin-top: 2%">
+                        <div class="six columns">
+                            <label for="witnessInput">Did anybody else witness the incident?</label>
+                            <select class="u-full-width" id="witnessInput">
+                                <option value="Option 1">Yes</option>
+                                <option value="Option 2">No</option>
+                            </select>
+                        </div>    
+                        <div class="six columns">
+                            <label for="previousInput">Has the incident been previously reported elsewhere?</label>
+                            <select class="u-full-width" id="previousInput">
+                                <option value="Option 1">Yes</option>
+                                <option value="Option 2">No</option>
+                            </select>
+                        </div>  
+                    </div>
+                    <div class="row" style="margin-top: 2%">
+                        <div class="twelve columns">
+                            <label for="descriptionMessage">Description of the incident</label>
+                            <textarea class="u-full-width" placeholder="Describe the incident here" id="descriptionMessage"></textarea>
+                        </div>  
+                    </div>
+            <!-- Support services form section -->
+                    <div class="row">
+                        <div class="twelve column" style="margin-top: 10%" align="center">
+                            <h4>Support Services</h4>
+                        </div>    
+                    </div>
+                    <div class="row" style="margin-top: 5%">
+                        <div class="six columns">
+                            <label for="acquiredInput">Have you sought previous support regarding the incident?</label>
+                            <select class="u-full-width" id="acquiredInput">
+                                <option value="Option 1">Yes</option>
+                                <option value="Option 2">No</option>
+                            </select>
+                        </div>
+                        <div class="six columns">
+                            <label for="requestedInput">Would you like to be contacting regarding support services?</label>
+                            <select class="u-full-width" id="requestedInput">
+                                <option value="Option 1">Yes</option>
+                                <option value="Option 2">No</option>
+                            </select>
+                        </div>
+                    </div>
+            <!-- Submission form section -->
+                <div class="row" style="margin-top: 10%">
+                    <div class="twelve columns" align="center">
+                        <label class="example-send-yourself-copy">
+                        <input type="checkbox">
+                        <span class="label-body">Send a copy to yourself</span>
+                      </label>   
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 5%">
+                    <div class="twelve columns" align="center">
+                    <input class="button-primary" type="submit" value="Submit">
+                    </div>
+                </div>
+            </form>        
+            </div>
+        <!-- Second Answer Path A.3 Content Close-->
+                
+        <!-- Second Answer Path A.4 Content Open-->
+            <!-- Anon Survivor Form -->
+            <div id="div4" class="targetDiv">
+        =
+                <div class="row" style="margin-top: 10%">
+                    <div class="twelve columns" align="center">
+                        <h3>Anonymous Reporting Form for Survivors</h3>
+                            <p>Please use this form if you are reporting an incident that has occured to you and you want to report anonymously. Please note that this form will still ask for an email address so that you can be contacted with support services and/or we require further information. You may enter a third-party email if you wish.</p>
+                            <p>Should you require any assistance in the completion of this form please contact UC Welfare at Welfare@canberra.edu.au and the team will be able to assist you.</p>
+                    </div>    
+                </div>
+            <!-- Personal details form section -->
+                <div class="row">
+                    <form>
+                    <div class="twelve column" style="margin-top: 10%" align="center">
+                        <h4>Personal Details</h4>
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 5%">
+                    <div class="six columns">
+                        <label for="emailInput">Please provide an email contact</label>
+                        <input class="u-full-width" type="email" placeholder="Email" id="emailInput">
+                    </div>
+                </div>
+                    <div class="six columns">
+                        <label for="thirdpartyInput">Is this your email or a third-party contact?</label>
+                        <select class="u-full-width" id="thirdpartyInput">
+                            <option value="Option 1">Personal</option>
+                            <option value="Option 2">Third-party</option>
+                        </select>
+                    </div>
+                <div class="row" style="margin-top: 2%">
+                        <div class="six columns">
+                          <label for="identifyInput">How do you identify within the University?</label>
+                          <select class="u-full-width" id="identifyInput">
+                            <option value="Option 1">Staff</option>
+                            <option value="Option 2">Student</option>
+                            <option value="Option 3">Other</option>
+                          </select>
+                        </div>
+                        <div class="six columns">
+                          <label for="occuranceInput">Did this incident happen to you?</label>
+                          <select class="u-full-width" id="occuranceInput">
+                            <option value="Option 1">Yes</option>
+                            <option value="Option 2">No</option>
+                          </select>
+                        </div>
+                </div>
+            <!-- Incident details form section -->
+                    <div class="row">
+                    <div class="twelve column" style="margin-top: 10%" align="center">
+                        <h4>Incident Details</h4>    
+                    </div>
+                    </div>
+                    <div class="row" style="margin-top: 5%">
+                        <div class="six columns">
+                          <label for="incidentInput">What type of incident occured?</label>
+                          <select class="u-full-width" id="incidentInput">
+                            <option value="Option 1">Act of Indecency</option>
+                            <option value="Option 2">Cyber Harassment</option>
+                            <option value="Option 3">Drink Spiking</option>
+                            <option value="Option 4">Intimate Image Abuse</option>
+                            <option value="Option 5">Intimate Observation or Capturing of Visual Data</option>
+                            <option value="Option 6">Sexual Assault</option>
+                            <option value="Option 7">Sexual Harassment</option>
+                            <option value="Option 8">Other</option>
+                          </select>
+                        </div>
+                        <div class="six columns">
+                          <label for="locationInput">Where did the incident take place?</label>
+                          <select class="u-full-width" id="locationInput">
+                            <option value="Option 1">On-Campus</option>
+                            <option value="Option 2">On-Campus Residence</option>
+                            <option value="Option 3">Off-Campus</option>
+                            <option value="Option 4">Placement or Internship</option>
+                            <option value="Option 5">Study Abroad or Exchange</option>
+                            <option value="Option 6">Homestay</option>
+                            <option value="Option 7">Other</option>
+                          </select>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-top: 2%">
+                        <div class="six columns">
+                            <label for="dateInput">What date did the incident occur on?</label>
+                            <input class="u-full-width" type="date" placeholder="Date" id="dateInput">
+                        </div>
+                        <div class="six columns">
+                            <label for="timeInput">What time did the incident occur?</label>
+                            <input class="u-full-width" type="time" placeholder="Time" id="timeInput">
+                        </div>  
+                    </div>
+                    <div class="row" style="margin-top: 2%">
+                        <div class="six columns">
+                            <label for="survivorInput">Do you know the identity of any individuals involved in the incident?</label>
+                            <select class="u-full-width" id="survivorInput">
+                                <option value="Option 1">Yes</option>
+                                <option value="Option 2">No</option>
+                                <option value="Option 3">Other</option>
+                            </select>
+                        </div>
+                        <div class="six columns">
+                            <label for="perpetratorInput">If you know the identity, how does the perpetrator identify with the University?</label>
+                            <select class="u-full-width" id="perpetratorInput">
+                                <option value="Option 1">Staff</option>
+                                <option value="Option 2">Student</option>
+                                <option value="Option 3">Other</option>
+                                <option value="Option 4">Unknown</option>
+                            </select>
+                        </div>
+                    </div>
+                        
+                    <div class="row" style="margin-top: 2%">
+                        <div class="six columns">
+                            <label for="witnessInput">Did anybody else witness the incident?</label>
+                            <select class="u-full-width" id="witnessInput">
+                                <option value="Option 1">Yes</option>
+                                <option value="Option 2">No</option>
+                            </select>
+                        </div>    
+                        <div class="six columns">
+                            <label for="previousInput">Has the incident been previously reported elsewhere?</label>
+                            <select class="u-full-width" id="previousInput">
+                                <option value="Option 1">Yes</option>
+                                <option value="Option 2">No</option>
+                            </select>
+                        </div>  
+                    </div>
+                    <div class="row" style="margin-top: 2%">
+                        <div class="twelve columns">
+                            <label for="descriptionMessage">Description of the incident</label>
+                            <textarea class="u-full-width" placeholder="Describe the incident here" id="descriptionMessage"></textarea>
+                        </div>  
+                    </div>
+            <!-- Support services form section -->
+                    <div class="row">
+                        <div class="twelve column" style="margin-top: 10%" align="center">
+                            <h4>Support Services</h4>
+                        </div>    
+                    </div>
+                    <div class="row" style="margin-top: 5%">
+                        <div class="six columns">
+                            <label for="acquiredInput">Have you sought previous support regarding the incident?</label>
+                            <select class="u-full-width" id="acquiredInput">
+                                <option value="Option 1">Yes</option>
+                                <option value="Option 2">No</option>
+                            </select>
+                        </div>
+                        <div class="six columns">
+                            <label for="requestedInput">Would you like to be contacting regarding support services?</label>
+                            <select class="u-full-width" id="requestedInput">
+                                <option value="Option 1">Yes</option>
+                                <option value="Option 2">No</option>
+                            </select>
+                        </div>
+                    </div>
+            <!-- Submission form section -->
+                <div class="row" style="margin-top: 10%">
+                    <div class="twelve columns" align="center">
+                        <label class="example-send-yourself-copy">
+                        <input type="checkbox">
+                        <span class="label-body">Send a copy to yourself or nominated email</span>
+                      </label>   
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 5%">
+                    <div class="twelve columns" align="center">
+                    <input class="button-primary" type="submit" value="Submit">
+                    </div>
+                </div>
+            </form>
+            </div>
         
-                <!--- Target Answer Path B -->
-                <div id="div2" class="targetDiv">
+        <!-- Second Answer Path A.4 Content Close-->
+                
+        <!-- Second Answer Path A.5 Content Open-->
+            <div id="div5" class="targetDiv">
+                <div class="row">
+                    <div class="one-half column" style="margin-top: 10%" align="center">
+                        <a  class="showSingle" target="8">Support Services</a>
+                    </div>
+                    <div class="one-half column" style="margin-top: 10%" align="center">
+                        <a  class="showSingle" target="9">Common Processes</a>
+                    </div>
+                </div>
+            </div>
+                <div id="div8" class="targetDiv">
+                    <div class="row">
+                        <div class="twelve column" style="margin-top: 10%" align="center">
+                        <h3>Support Services</h3>
+                        <p>Here you will find all the contacts you may need for support for on an off university campus.</p>
+
+                        <p>If you are in immediate danger and require urgent assistance, we encourage you to call '000'. If you are on-campus, you can also call campus security on 6201 2222.</p>
+                        </div>
+                    </div>
+                    <div class="twelve column" style="margin-top: 10%" align="center">
+                        <table class="u-full-width">
+                            <thead>
+                                <tr>
+                                    <th>Serivce</th>
+                                    <th>How They Can Help</th>
+                                    <th>Phone</th>
+                                    <th>Email</th>
+                                    <th>Website</th>
+                                    <th>Crisis Service</th>
+                                    <th>Ongoing Support</th>
+                                    <th>Connect Anonymously</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>UC Security</td>
+                                    <td>Security staff will liaise with police, ambulance and/or UC support services as necessary.</td>
+                                    <td>(02) 6201 2222</td>
+                                    <td>security@canberra.edu.au</td>
+                                    <td><a href="https://www.canberra.edu.au/safe-community/security">www.canberra.edu.au/safe-community/security</a></td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10003;</td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10006;</td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10006;</td>
+                                </tr>
+                                <tr>
+                                    <td>UC Medical and Counselling</td>
+                                    <td>Provides a range of health, well-being and counselling support services to staff, students and visitors on-campus.</td>
+                                    <td>(02) 6201 2351</td>
+                                    <td>n/a</td>
+                                    <td><a href="https://www.canberra.edu.au/on-campus/health-and-support/medical-counselling">www.canberra.edu.au/on-campus/health-and-support/medical-counselling</a></td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10003;</td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10003;</td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10006;</td>
+                                </tr>
+                                <tr>
+                                    <td>University Crisis Line</td>
+                                    <td>Seek immediate relief from emotional distress and explore coping strategies, particularly for out of hours support.</td>
+                                    <td>Call: 1300 271 790 Text: 0488 884 227</td>
+                                    <td>n/a</td>
+                                    <td><a href="https://www.lifeline.org.au/">www.lifeline.org.au/</a></td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10003;</td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10003;</td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10003;</td>
+                                </tr>
+                                <tr>
+                                    <td>Emplopyee Assistance Program (EAP)</td>
+                                    <td>An independent and confidential counselling service available to staff of the University and their immediate families.</td>
+                                    <td>1300 687 327</td>
+                                    <td>info@convergeintl.com.au</td>
+                                    <td><a href="https://www.convergeinternational.com.au/">www.convergeinternational.com.au/</a></td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10006;</td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10003;</td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10006;</td>
+                                </tr>
+                                <tr>
+                                    <td>Student Welfare</td>
+                                    <td>Can guide you through any personal, financial or study issues through support, advice and referral to other agencies.</td>
+                                    <td>(02) 6206 8841</td>
+                                    <td>Welfare@canberra.edu.au</td>
+                                    <td><a href="https://www.canberra.edu.au/about-uc/widening-participation/welfare">www.canberra.edu.au/about-uc/widening-participation/welfare</a></td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10003;</td>                           <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10003;</td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10006;</td>
+                                </tr>
+                                <tr>
+                                    <td>UC Multi-Faith Centre</td>
+                                    <td>Pastoral care services for all staff and students.</td>
+                                    <td>n/a</td>
+                                    <td>chaplaincy@canberra.edu.au</td>
+                                    <td>n/a</td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10006;</td>                           <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10003;</td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10006;</td>
+                                </tr>
+                                <tr>
+                                    <td>UCSRC Womens Officer</td>
+                                    <td>Confidential and impartial advice on problems you may be facing.</td>
+                                    <td>n/a</td>
+                                    <td>womens@ucsrc.org.au</td>
+                                    <td>n/a</td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10006;</td>                           <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10003;</td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10006;</td>
+                                </tr>
+                                <tr>
+                                    <td>Service Assisting Male Survivors of Sexual Assualt (SAMSSA)</td>
+                                    <td>Counselling and support to men over the age of 16 and their supporters in the ACT and surrounding regions.</td>
+                                    <td>Call: (02) 6247 2525. Text: 0488 586 518</td>
+                                    <td>samssa@samssa.org.au</td>
+                                    <td><a href="www.samssa.org.au/">www.samssa.org.au/</a></td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10003;</td>                           <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10003;</td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10003;</td>
+                                </tr>
+                                <tr>
+                                    <td>SAMSN</td>
+                                    <td>Talk with a mate who can relate. Services for male survivors and supporters.</td>
+                                    <td>1800472676</td>
+                                    <td>support@samsn.org.au</td>
+                                    <td><a href="www.samsn.org.au/">www.samsn.org.au/</a></td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10006;</td>                           <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10003;</td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10003;</td>
+                                </tr>
+                                <tr>
+                                    <td>UniLodge</td>
+                                    <td>Residential Advisors and staff are able to assist with crisis relating to on-campus accomodation.</td>
+                                    <td>UC Lodge: 61 2 6110 4000. Cooper Lodge: 61 2 6109 4200. Weeden Lodge: 61 2 6113 5000.</td>
+                                    <td>n/a</td>
+                                    <td>n/a</td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10003;</td>                           <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10006;</td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10006;</td>
+                                </tr>
+                                <tr>
+                                    <td>Crisis Assessment and Treatment Team (CATT)</td>
+                                    <td>Provides a highly accessible and responsive acute mental health assessment and treatment service in the most appropriate setting. </td>
+                                    <td>02 6205 1065</td>
+                                    <td>n/a</td>
+                                    <td><a href="http://health.act.gov.au/our-services/mental-health">health.act.gov.au/our-services/mental-health</a></td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10003;</td>                           <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10003;</td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10003;</td>
+                                </tr>
+                                <tr>
+                                    <td>Canberra Rape Crisis Centre</td>
+                                    <td>Counselling services and advocacy for survivors and supporters.</td>
+                                    <td>6247 2525</td>
+                                    <td>crcc@crcc.org.au</td>
+                                    <td><a href="https://www.crcc.org.au/">www.crcc.org.au/</a></td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10003;</td>                           <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10003;</td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10003;</td>
+                                </tr>
+                                <tr>
+                                    <td>Domestic Violence Crisis Service (DVCS)</td>
+                                    <td>Provides emergency and long-term support, advice, domestic violence resources, and services</td>
+                                    <td>0262800900</td>
+                                    <td>crisis@dvcs.org.au</td>
+                                    <td><a href="https://dvcs.org.au/">dvcs.org.au/</a></td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10003;</td>                           <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10003;</td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10003;</td>
+                                </tr>
+                            </tbody>
+                        </table> 
+                    </div>
+                </div>
+                <div id="div9" class="targetDiv">
+                <div class="row">
+                    <div class="one-half column" style="margin-top: 10%" align="left">
+                        <h3>Reporting to the Police</h3>
+                        <p>It is your right to contact police if you choose. You can decide if you would like to make a report or not, but you can contact police at any stage to speak to someone about what your options are regardless of your choice.</p>
+                        <p>If you do decide to report an incident to the police please see the outline below of what will likely happen as part of the reporting process. This list includes actions items and advice for preparing to report.</p>
+                        <ul>
+                            <li>If you are reporting the incident immediately try not to change your clothes or shower, this will allow the most amount of evidence to be collected.</li>
+                            <li>You can make an Information Report to police. This report does not have to result in criminal investigations unless you consent.</li>
+                            <li>Criminal investigations consist of making a statement with the police, collecting evidence, and then going to trial.</li>
+                            <li>You may take a support person to all elements of the process. This could be someone you trust or a support person from services such as the Canberra Rape Crisis Centre.</li>
+                            <li>If your case goes to trial in court, you will never see the defendant. You will be asked to give evidence, however, this will be done through a remote witness facility.</li>
+                            <li>It is important to note that all information provided to the police is handled with full discretion. </li>
+                        </ul>
+                    </div>
+                    <div class="one-half column" style="margin-top: 10%" align="left">
+                        <h3>Going to Hospital</h3>
+                        <p>Sexual assualt can be a scary and dangerous experience. It is vital that you look after yourself and seek medical help as soon as possible.</p>
+                        <p>The Forensic and Medical Assault Sexual Clinic (FAMSAC) currently based at the Canberra Hospital can assist with medical aid and collection of evidence. They can be accessed at any time, and are available for people who have been victims of sexual assault, even weeks after the assault has occurred.</p>
+                        <p>FAMSAC staff's main focus is your health and well being. They are the most knowledgeable about how sexual assault can impact a person and their goal is to focus on helping you become physically healthy again. FAMSAC staff are bound by strict confidentiality, and if the patient is over the age of 18, they are not obligated to pass your details on to police. FAMSAC records are kept separately from any other medical record. Other doctors and nurses in the The Canberra Hospital cannot access them without your permission and will not know you have attended FAMSAC unless you advise them.</p>
+                        <p>If you do not wish to attend hospital you may seek medical assistance, such as counselling or STI tests, at UC Medical and Counselling.</p>
+                    </div>
+                </div>
+                </div>
+        <!-- Second Answer Path A.5 Content Close-->
+        
+        <!-- Path A Content Close -->
+                
+        
+        <!--- Target Answer Path B -->
+            <div id="div2" class="targetDiv">
                     
         <!--- Second Question Path B -->
         <div class="row">
             <div class="twelve column" style="margin-top: 25%" align="center">
                 <h1>I want to</h1>
             </div>
-        </div> 
+        </div>
         <div class="row">
             <!--- Second Answer Path B.6 -->
             <div class="one-half column" style="margin-top: 25%" align="center">
                 <a  class="showSingle" target="6">Report</a>
-                <div id="div6" class="targetDiv"></div>
             </div>
+
             <!-- Second Answer Path B.7 -->
             <div class="one-half column" style="margin-top: 25%" align="center">
                 <a  class="showSingle" target="7">Services</a>
-                <div id="div7" class="targetDiv">Services Text</div>
             </div>
         </div>
-                <!--- Close Target Answer Path A -->
-                </div> 
-    </div>
-    
-    <!-- Form -->
-                <div id="div3" class="targetDiv"> 
-    <div class="container">
-        <div class="row">
-            <div class="twelve column" style="margin-top: 25%" align="center">
-                <form>
-                    <!-- Name -->
-                    <input type="text" name="name" placeholder="Name" />
+                
+    <!-- Path B Content -->
+                
+        <!-- Second Answer Path B.6 Content Open-->
+            <div id="div6" class="targetDiv">
+            <!-- Reporting form for supporters -->
+            <form>
+                <div class="row" style="margin-top: 10%">
+                    <div class="twelve columns" align="center">
+                        <h3>Reporting Form for Supporters</h3>
+                            <p>Please use this form if you are reporting an incident on behalf of someone else or if you have witnessed an incident.</p>
+                            <p>Should you require any assistance in the completion of this form please contact UC Welfare at Welfare@canberra.edu.au and the team will be able to assist you.</p>
+                    </div>    
+                </div>
+            <!-- Personal details form section -->
+                <div class="row">
+                    <div class="twelve column" style="margin-top: 10%" align="center">
+                        <h4>Personal Details</h4>
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 5%">
+                    <div class="six columns">
+                        <label for="nameInput">What is your name?</label>
+                        <input class="u-full-width" type="name" placeholder="Name" id="nameInput">
+                    </div>
+                    <div class="six columns">
+                        <label for="emailInput">What is your email?</label>
+                        <input class="u-full-width" type="email" placeholder="Email" id="emailInput">
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 2%">
+                        <div class="six columns">
+                          <label for="identifyInput">How do you identify within the University?</label>
+                          <select class="u-full-width" id="identifyInput">
+                            <option value="Option 1">Staff</option>
+                            <option value="Option 2">Student</option>
+                            <option value="Option 3">Other</option>
+                          </select>
+                        </div>
+                        <div class="six columns">
+                          <label for="knowledgeInput">How are you aware of the incident?</label>
+                          <select class="u-full-width" id="knowledgeInput">
+                            <option value="Option 1">Witnessed the incident take place</option>
+                            <option value="Option 2">The incident was reported to me and this report is being submitted WITHOUT survivor knowledge</option>
+                            <option value="Option 3">The incident was reported to me and this report is being submitted ON BEHALF OF the survivor</option>
+                          </select>
+                        </div>
+                </div>
+            <!-- Incident details form section -->
+                    <div class="row">
+                    <div class="twelve column" style="margin-top: 10%" align="center">
+                        <h4>Incident Details</h4>    
+                    </div>
+                    </div>
+                    <div class="row" style="margin-top: 5%">
+                        <div class="six columns">
+                          <label for="incidentInput">What type of incident occured?</label>
+                          <select class="u-full-width" id="incidentInput">
+                            <option value="Option 1">Act of Indecency</option>
+                            <option value="Option 2">Cyber Harassment</option>
+                            <option value="Option 3">Drink Spiking</option>
+                            <option value="Option 4">Intimate Image Abuse</option>
+                            <option value="Option 5">Intimate Observation or Capturing of Visual Data</option>
+                            <option value="Option 6">Sexual Assault</option>
+                            <option value="Option 7">Sexual Harassment</option>
+                            <option value="Option 8">Other</option>
+                          </select>
+                        </div>
+                        <div class="six columns">
+                          <label for="locationInput">Where did the incident take place?</label>
+                          <select class="u-full-width" id="locationInput">
+                            <option value="Option 1">On-Campus</option>
+                            <option value="Option 2">On-Campus Residence</option>
+                            <option value="Option 3">Off-Campus</option>
+                            <option value="Option 4">Placement or Internship</option>
+                            <option value="Option 5">Study Abroad or Exchange</option>
+                            <option value="Option 6">Homestay</option>
+                            <option value="Option 7">Other</option>
+                          </select>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-top: 2%">
+                        <div class="six columns">
+                            <label for="dateInput">What date did the incident occur on?</label>
+                            <input class="u-full-width" type="date" placeholder="Date" id="dateInput">
+                        </div>
+                        <div class="six columns">
+                            <label for="timeInput">What time did the incident occur?</label>
+                            <input class="u-full-width" type="time" placeholder="Time" id="timeInput">
+                        </div>  
+                    </div>
+                    <div class="row" style="margin-top: 2%">
+                        <div class="six columns">
+                            <label for="survivorInput">How does the survivor identify within the University?</label>
+                            <select class="u-full-width" id="survivorInput">
+                                <option value="Option 1">Staff</option>
+                                <option value="Option 2">Student</option>
+                                <option value="Option 4">Other</option>
+                                <option value="Option 4">Unknown</option>
+                            </select>
+                        </div>
+                        <div class="six columns">
+                            <label for="perpetratorInput">How does the perpetrator identify with the University?</label>
+                            <select class="u-full-width" id="perpetratorInput">
+                                <option value="Option 1">Staff</option>
+                                <option value="Option 2">Student</option>
+                                <option value="Option 4">Other</option>
+                                <option value="Option 4">Unknown</option>
+                            </select>
+                        </div>
+                    </div>
+                        
+                    <div class="row" style="margin-top: 2%">
+                        <div class="six columns">
+                            <label for="witnessInput">Did anybody else witness the incident?</label>
+                            <select class="u-full-width" id="witnessInput">
+                                <option value="Option 1">Yes</option>
+                                <option value="Option 2">No</option>
+                            </select>
+                        </div>    
+                        <div class="six columns">
+                            <label for="previousInput">Incident previously reported elsewhere?</label>
+                            <select class="u-full-width" id="previousInput">
+                                <option value="Option 1">Yes</option>
+                                <option value="Option 2">No</option>
+                            </select>
+                        </div>  
+                    </div>
+                    <div class="row" style="margin-top: 2%">
+                        <div class="twelve columns">
+                            <label for="descriptionMessage">Description of the incident</label>
+                            <textarea class="u-full-width" placeholder="Describe the incident here" id="descriptionMessage"></textarea>
+                        </div>  
+                    </div>
+            <!-- Support services form section -->
+                    <div class="row">
+                        <div class="twelve column" style="margin-top: 10%" align="center">
+                            <h4>Support Services</h4>
+                        </div>    
+                    </div>
+                    <div class="row" style="margin-top: 5%">
+                        <div class="six columns">
+                            <label for="acquiredInput">Have you sought previous support regarding the incident?</label>
+                            <select class="u-full-width" id="acquiredInput">
+                                <option value="Option 1">Yes</option>
+                                <option value="Option 2">No</option>
+                            </select>
+                        </div>
+                        <div class="six columns">
+                            <label for="requestedInput">Would you like to be contacting regarding support services?</label>
+                            <select class="u-full-width" id="requestedInput">
+                                <option value="Option 1">Yes</option>
+                                <option value="Option 2">No</option>
+                            </select>
+                        </div>
+                    </div>
+            <!-- Submission form section -->
+                <div class="row" style="margin-top: 10%">
+                    <div class="twelve columns" align="center">
+                        <label class="example-send-yourself-copy">
+                        <input type="checkbox">
+                        <span class="label-body">Send a copy to yourself</span>
+                      </label>   
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 5%">
+                    <div class="twelve columns" align="center">
+                    <input class="button-primary" type="submit" value="Submit">
+                    </div>
+                </div>
+            </form>
+            </div>
+            <!-- Second Answer Path B.6 Content Close-->
                     
-                    <!-- Incident Type -->
-                    <label for="incident">Incident type:</label>
-                        <input type="checkbox" id="incident1" name="incident1" value="indecency">
-                        <label for="incident1">Act of Indecency</label>
-                        <input type="checkbox" id="incident2" name="incident2" value="cyber">
-                        <label for="incident2">Cyber Harassment</label>
-                        <input type="checkbox" id="incident3" name="incident3" value="spiking">
-                        <label for="incident3">Drink Spiking</label>
-                        <input type="checkbox" id="incident4" name="incident4" value="image">
-                        <label for="incident4">Intimate Image Abuse</label>
-                        <input type="checkbox" id="incident5" name="incident5" value="data">
-                        <label for="incident5">Intimate Observation or Capturing of Visual Data</label>
-                        <input type="checkbox" id="incident6" name="incident6" value="assault">
-                        <label for="incident6">Sexual Assault</label>
-                        <input type="checkbox" id="incident7" name="incident7" value="harassment">
-                        <label for="incident7">Sexual Harassment</label>
-                        <input type="checkbox" id="incident8" name="incident8" value="other">
-                        <label for="incident8">Other</label>
+            <!-- Second Answer Path B.7 Content Open -->
                     
-                    <!-- Incident Location -->
-                    <label for="location">Location</label>
-                        <input type="checkbox" id="location1" name="location1" value="campus">
-                        <label for="location1">On-Campus</label>
-                        <input type="checkbox" id="location2" name="location2" value="residence">
-                        <label for="location2">On-Campus Residence</label>
-                        <input type="checkbox" id="location3" name="location3" value="off">
-                        <label for="location3">Off-Campus</label>
-                        <input type="checkbox" id="location4" name="location4" value="placement">
-                        <label for="location4">Placement or Internship</label>
-                        <input type="checkbox" id="location5" name="location5" value="abroad">
-                        <label for="location5">Study Abroad or Exchange</label>
-                        <input type="checkbox" id="location6" name="location6" value="homestay">
-                        <label for="location6">Homestay</label>
-                        <input type="checkbox" id="location7" name="location7" value="other">
-                        <label for="location7">Other</label>
-                    
-                    <!-- Incident Date -->
-                    <label for="incidentDate">Incident Date:</label>
-                        <input type="date" id="incidentDate" name="incidentDate">
-                    
-                    <!-- Support Acquired -->
-                    <label for="involved">Previous support sought regarding incident:</label>
-                        <input type="radio" id="yes" name="support" value="yes">
-                        <label for="yes">Yes</label>
-                        <input type="radio" id="no" name="support" value="no">
-                        <label for="no">No</label>
-                    
-                    <!-- Support Requested -->
-                    <label for="involved">Would you like to be contacted regarding support services:</label>
-                        <input type="radio" id="yes" name="request" value="yes">
-                        <label for="yes">Yes</label>
-                        <input type="radio" id="no" name="request" value="no">
-                        <label for="no">No</label>
-                    
-                    <!-- Afflicted Person Type -->
-                    <label for="person">Person Type:</label>
-                        <input type="checkbox" id="person1" name="person1" value="staff">
-                        <label for="person1">Staff</label>
-                        <input type="checkbox" id="person2" name="person2" value="student">
-                        <label for="person2">Student</label>
-                        <input type="checkbox" id="person3" name="person3" value="other">
-                        <label for="person3">Other</label>
-                    
-                    <!-- Knowledge of Persons Involved -->
-                    <label for="involved">Knowledge of persons involved:</label>
-                        <input type="radio" id="yes" name="involved" value="yes">
-                        <label for="yes">Yes</label>
-                        <input type="radio" id="no" name="involved" value="no">
-                        <label for="no">No</label>
-                    
-                    <!-- Witness -->
-                    <label for="witness">Did anybody witness the incident:</label>
-                        <input type="radio" id="yes" name="witness" value="yes">
-                        <label for="yes">Yes</label>
-                        <input type="radio" id="no" name="witness" value="no">
-                        <label for="no">No</label>
-                    
-                    <!-- Previous Reporting -->
-                    <label for="reported">Incident previously reported elsewhere:</label>
-                        <input type="radio" id="yes" name="reported" value="yes">
-                        <label for="yes">Yes</label>
-                        <input type="radio" id="no" name="reported" value="no">
-                        <label for="no">No</label>            
+                <div id="div7" class="targetDiv">
+                    <div class="row">
+                        <div class="twelve column" style="margin-top: 10%" align="center">
+                        <h3>Support Services</h3>
+                            
+                        <p>Sexual harassment, assault and other incidents not only affect the survivors but also witnesses, confidants, family, friends, and anyone else involved in the incident process. This is completely normal and supporters should not hesitate to reach out for support if they feel the need. </p>
+                        <p>Here you will find all the contacts you may need for support for on an off university campus.</p>
 
-                    
-                    <!-- Description of Incident -->
-                    <label for="description">Description of Incident</label>
-                        <textarea name="description" rows="10" cols=80%>
-                        Description of the incident
-                        </textarea>   
-                </form>
+                        <p>If you are in immediate danger and require urgent assistance, we encourage you to call '000'. If you are on-campus, you can also call campus security on 6201 2222.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                    <div class="twelve column" style="margin-top: 10%" align="center">
+                        <table class="u-full-width">
+                            <thead>
+                                <tr>
+                                    <th>Serivce</th>
+                                    <th>How They Can Help</th>
+                                    <th>Phone</th>
+                                    <th>Email</th>
+                                    <th>Website</th>
+                                    <th>Crisis Service</th>
+                                    <th>Ongoing Support</th>
+                                    <th>Connect Anonymously</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>UC Security</td>
+                                    <td>Security staff will liaise with police, ambulance and/or UC support services as necessary.</td>
+                                    <td>(02) 6201 2222</td>
+                                    <td>security@canberra.edu.au</td>
+                                    <td><a href="https://www.canberra.edu.au/safe-community/security">www.canberra.edu.au/safe-community/security</a></td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10003;</td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10006;</td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10006;</td>
+                                </tr>
+                                <tr>
+                                    <td>UC Medical and Counselling</td>
+                                    <td>Provides a range of health, well-being and counselling support services to staff, students and visitors on-campus.</td>
+                                    <td>(02) 6201 2351</td>
+                                    <td>n/a</td>
+                                    <td><a href="https://www.canberra.edu.au/on-campus/health-and-support/medical-counselling">www.canberra.edu.au/on-campus/health-and-support/medical-counselling</a></td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10003;</td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10003;</td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10006;</td>
+                                </tr>
+                                <tr>
+                                    <td>University Crisis Line</td>
+                                    <td>Seek immediate relief from emotional distress and explore coping strategies, particularly for out of hours support.</td>
+                                    <td>Call: 1300 271 790 Text: 0488 884 227</td>
+                                    <td>n/a</td>
+                                    <td><a href="https://www.lifeline.org.au/">www.lifeline.org.au/</a></td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10003;</td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10003;</td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10003;</td>
+                                </tr>
+                                <tr>
+                                    <td>Emplopyee Assistance Program (EAP)</td>
+                                    <td>An independent and confidential counselling service available to staff of the University and their immediate families.</td>
+                                    <td>1300 687 327</td>
+                                    <td>info@convergeintl.com.au</td>
+                                    <td><a href="https://www.convergeinternational.com.au/">www.convergeinternational.com.au/</a></td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10006;</td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10003;</td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10006;</td>
+                                </tr>
+                                <tr>
+                                    <td>Student Welfare</td>
+                                    <td>Can guide you through any personal, financial or study issues through support, advice and referral to other agencies.</td>
+                                    <td>(02) 6206 8841</td>
+                                    <td>Welfare@canberra.edu.au</td>
+                                    <td><a href="https://www.canberra.edu.au/about-uc/widening-participation/welfare">www.canberra.edu.au/about-uc/widening-participation/welfare</a></td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10003;</td>                           <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10003;</td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10006;</td>
+                                </tr>
+                                <tr>
+                                    <td>UC Multi-Faith Centre</td>
+                                    <td>Pastoral care services for all staff and students.</td>
+                                    <td>n/a</td>
+                                    <td>chaplaincy@canberra.edu.au</td>
+                                    <td>n/a</td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10006;</td>                           <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10003;</td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10006;</td>
+                                </tr>
+                                <tr>
+                                    <td>UCSRC Womens Officer</td>
+                                    <td>Confidential and impartial advice on problems you may be facing.</td>
+                                    <td>n/a</td>
+                                    <td>womens@ucsrc.org.au</td>
+                                    <td>n/a</td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10006;</td>                           <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10003;</td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10006;</td>
+                                </tr>
+                                <tr>
+                                    <td>Service Assisting Male Survivors of Sexual Assualt (SAMSSA)</td>
+                                    <td>Counselling and support to men over the age of 16 and their supporters in the ACT and surrounding regions.</td>
+                                    <td>Call: (02) 6247 2525. Text: 0488 586 518</td>
+                                    <td>samssa@samssa.org.au</td>
+                                    <td><a href="www.samssa.org.au/">www.samssa.org.au/</a></td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10003;</td>                           <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10003;</td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10003;</td>
+                                </tr>
+                                <tr>
+                                    <td>SAMSN</td>
+                                    <td>Talk with a mate who can relate. Services for male survivors and supporters.</td>
+                                    <td>1800472676</td>
+                                    <td>support@samsn.org.au</td>
+                                    <td><a href="www.samsn.org.au/">www.samsn.org.au/</a></td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10006;</td>                           <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10003;</td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10003;</td>
+                                </tr>
+                                <tr>
+                                    <td>UniLodge</td>
+                                    <td>Residential Advisors and staff are able to assist with crisis relating to on-campus accomodation.</td>
+                                    <td>UC Lodge: 61 2 6110 4000. Cooper Lodge: 61 2 6109 4200. Weeden Lodge: 61 2 6113 5000.</td>
+                                    <td>n/a</td>
+                                    <td>n/a</td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10003;</td>                           <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10006;</td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10006;</td>
+                                </tr>
+                                <tr>
+                                    <td>Crisis Assessment and Treatment Team (CATT)</td>
+                                    <td>Provides a highly accessible and responsive acute mental health assessment and treatment service in the most appropriate setting. </td>
+                                    <td>02 6205 1065</td>
+                                    <td>n/a</td>
+                                    <td><a href="http://health.act.gov.au/our-services/mental-health">health.act.gov.au/our-services/mental-health</a></td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10003;</td>                           <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10003;</td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10003;</td>
+                                </tr>
+                                <tr>
+                                    <td>Canberra Rape Crisis Centre</td>
+                                    <td>Counselling services and advocacy for survivors and supporters.</td>
+                                    <td>6247 2525</td>
+                                    <td>crcc@crcc.org.au</td>
+                                    <td><a href="https://www.crcc.org.au/">www.crcc.org.au/</a></td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10003;</td>                           <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10003;</td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10003;</td>
+                                </tr>
+                                <tr>
+                                    <td>Domestic Violence Crisis Service (DVCS)</td>
+                                    <td>Provides emergency and long-term support, advice, domestic violence resources, and services</td>
+                                    <td>0262800900</td>
+                                    <td>crisis@dvcs.org.au</td>
+                                    <td><a href="https://dvcs.org.au/">dvcs.org.au/</a></td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10003;</td>                           <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10003;</td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10003;</td>
+                                </tr>
+                            </tbody>
+                            </table> 
+                        </div>
+                    </div>
+                </div>
+                
+            <!-- Second Answer Path B.7 Content Close-->
+        <!-- Path B Content Close -->
+                
+
             </div>
         </div>
     </div>
-                </div>
-    
-    <!-- Anon Form -->
-                <div id="div4" class="targetDiv">
-    <div class="container">
-        <div class="row">
-            <div class="twelve column" style="margin-top: 25%" align="center">
-                <form>
-                    <input type="text" name="report" placeholder="report" /> 
-                    <input type="text" name="anon" placeholder="anon" /> 
-                </form>
-            </div>
-        </div>
-    </div>
-                </div>
-                
-                
+
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
