@@ -166,6 +166,7 @@ a {
   color: #ffffff; }
 a:hover {
   color: #009abc; }
+.pointer {cursor: pointer;}
 
 
 /* Buttons
@@ -228,7 +229,7 @@ input[type="button"].button-primary:focus {
   border-color: #009abc; 
     color: #ffffff;}
 
-
+.pointer {cursor: pointer;}
 /* Forms
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 input[type="email"],
@@ -341,13 +342,17 @@ th,
 td {
   padding: 12px 15px;
   text-align: left;
+    font-family: "Verlag";
   border-bottom: 1px solid #006c91; }
 th:first-child,
+font-family: "Verlag Light";
 td:first-child {
   padding-left: 0; }
 th:last-child,
+font-family: "Verlag Light";
 td:last-child {
-  padding-right: 0; }
+ font-family: "Verlag Light";
+    padding-right: 0; }
 
 
 /* Spacing
@@ -370,7 +375,6 @@ ul,
 ol,
 form {
   margin-bottom: 2.5rem; }
-
 
 /* Utilities
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -410,7 +414,13 @@ hr {
 /* Start Personalised Code
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* Font */
-@font-face {font-family: "Verlag"; src: url("//db.onlinewebfonts.com/t/9c6548c5500714092f1d1e2f7e3c58cc.eot"); src: url("//db.onlinewebfonts.com/t/9c6548c5500714092f1d1e2f7e3c58cc.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/9c6548c5500714092f1d1e2f7e3c58cc.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/9c6548c5500714092f1d1e2f7e3c58cc.woff") format("woff"), url("//db.onlinewebfonts.com/t/9c6548c5500714092f1d1e2f7e3c58cc.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/9c6548c5500714092f1d1e2f7e3c58cc.svg#Verlag") format("svg"); }
+@font-face {font-family: "Verlag"; src: url("//db.onlinewebfonts.com/t/9c6548c5500714092f1d1e2f7e3c58cc.eot"); src: url("//db.onlinewebfonts.com/t/9c6548c5500714092f1d1e2f7e3c58cc.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/9c6548c5500714092f1d1e2f7e3c58cc.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/9c6548c5500714092f1d1e2f7e3c58cc.woff") format("woff"), url("//db.onlinewebfonts.com/t/9c6548c5500714092f1d1e2f7e3c58cc.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/9c6548c5500714092f1d1e2f7e3c58cc.svg#Verlag") format("svg"); 
+}
+@import url(//db.onlinewebfonts.com/c/bcd0c9bdcf29c2dd630785c724469553?family=Verlag+Book);
+@font-face {font-family: "Verlag Book"; src: url("//db.onlinewebfonts.com/t/bcd0c9bdcf29c2dd630785c724469553.eot"); src: url("//db.onlinewebfonts.com/t/bcd0c9bdcf29c2dd630785c724469553.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/bcd0c9bdcf29c2dd630785c724469553.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/bcd0c9bdcf29c2dd630785c724469553.woff") format("woff"), url("//db.onlinewebfonts.com/t/bcd0c9bdcf29c2dd630785c724469553.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/bcd0c9bdcf29c2dd630785c724469553.svg#Verlag Book") format("svg"); }
+
+@import url(//db.onlinewebfonts.com/c/ddee8efcace361d6aab1d9b0473cd521?family=Verlag+Light);
+@font-face {font-family: "Verlag Light"; src: url("//db.onlinewebfonts.com/t/ddee8efcace361d6aab1d9b0473cd521.eot"); src: url("//db.onlinewebfonts.com/t/ddee8efcace361d6aab1d9b0473cd521.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/ddee8efcace361d6aab1d9b0473cd521.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/ddee8efcace361d6aab1d9b0473cd521.woff") format("woff"), url("//db.onlinewebfonts.com/t/ddee8efcace361d6aab1d9b0473cd521.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/ddee8efcace361d6aab1d9b0473cd521.svg#Verlag Light") format("svg"); }
 
 /* Start Header Styles */
 /* Header */
@@ -692,7 +702,7 @@ div.a_report_section_one {
 }
 
 div.a_report_section_one select {
-
+    font-family: "Verlag Light";
   background-color: #ffffff;
   border: 1px solid #92d6e3;
   border-radius: 2px;
@@ -701,6 +711,7 @@ div.a_report_section_one select {
     }
 
 div.a_report_section_one textarea {
+    font-family: "Verlag Light";
 background-color: #ffffff;
     }
 
@@ -725,6 +736,7 @@ div.a_report_section_two select {
 
 div.a_report_section_two textarea {
 background-color: #ffffff;
+    color: #414042;
     }
 
 div.a_report_section_two date {
