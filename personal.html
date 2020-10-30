@@ -5,7 +5,7 @@
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>Page title</title>
+  <title>Report and Support</title>
   <meta name="description" content="">
   <meta name="author" content="">
 
@@ -15,9 +15,10 @@
 
   <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
-
-  <!-- CSS
+    <link href="//db.onlinewebfonts.com/c/9c6548c5500714092f1d1e2f7e3c58cc?family=Verlag" rel="stylesheet" type="text/css"/>
+    <link href="//db.onlinewebfonts.com/c/bcd0c9bdcf29c2dd630785c724469553?family=Verlag+Book" rel="stylesheet" type="text/css"/>
+    <link href="//db.onlinewebfonts.com/c/ddee8efcace361d6aab1d9b0473cd521?family=Verlag+Light" rel="stylesheet" type="text/css"/>
+      <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
@@ -33,30 +34,72 @@
 
     <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="icon" type="image/png" href="css/images/favicon.png">
 
 </head>
 
 <body>
 <header> 
-    
+ 
+<div class="header">
+    <div class="row">
+        <div class="nav_lines">
+    <div class="one column" align="right">
     <div id="myNav" class="overlay">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <div class="overlay-content">
-        <a href="index.html">Home<body class="home"></body></a>
-        <span id="menu1" class="menuitem menuselected">
-        <a href="#survivorreport">Report</a>
-        </span>
-        <a href=".html">Resources</a>
-        <a href=".html">Placeholder</a>
-        <a href=".html">Placeholder</a>
+        <a href="index.html">Home</a>
+        <a href="personal.html">Get Started</a>
+        <a href="personal.html#first_question">Report an Incident</a>
+        <a href="personal.html">Report an Incident Anonymously</a>
+        <a href="personal.html">Report an Incident You've Witnessed</a>
+        <a href="personal.html">Find Services for Survivors</a>
+        <a href="personal.html">Seek Support for Survivors</a>
+        <a href="personal.html">Seek Support for Supporters</a>
     </div>
     </div>
-
-    <span style="font-size:32px;cursor:pointer;font-weight:900;" onclick="openNav()">&#9776; Title</span>
-
+    
+    <span style="font-size:28px;cursor:pointer;font-weight:1000;padding-left:2%" onclick="openNav()">&#9776;</span>
+        </div>
+        </div>
+        
+    <div class="header_title">
+    <div class="nine columns" align="left">
+        <a href="personal.html"><h5>Report and Support</h5></a>
+    </div> 
+    </div>
+        
+    <div class="emergency">  
+    <div class="one column" align="left">
+        <p>Emergency?<br>Call 000.</p>  
+    </div>
+    </div> 
+        
+    <div class="logo">  
+    <div class="one column" align="center">
+        <a href="index.html">
+        <img src="css/images/logo.PNG">
+        </a>
+    </div>
+    </div>
+    
+    </div>  
+</div>
 <script>
+//navigation
+    function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+    }
 
+    function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+    }
+    
+//nav
+
+$('#a_report_section_one').click(function(){
+$(document).scrollTop(100) // any value you need
+});
 //buttons
     $(document).ready(function(){
       $("button").click(function(){
@@ -70,85 +113,150 @@
         $('#div'+target).toggle('.hide');
     });
 });
+    </script>
     
 </header>
 
     
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-
-<div class="buttons">
+<div class="introduction">
+    <div class="container"> 
+    <div class="row">
+    <div class="twelve columns" align="center" style="margin-top: 10%">
+        <h3>How We Can Help</h3>
+        </div>
+    </div>
+    <div class="row">
+    <div class="twelve columns" align="center">
+        
+        <p>We understand that the post-incident experience is different for everyone. This page is designed to guide you through this journey and provide the support suited to your needs. Click on the appropriate buttons to your situtation in each section and be guided to personalised support and next steps for you to take. Alternatively, if you wish to jump straight to a specific section please use the naviagation in the top left corner of the page.</p>
+        <p>If you or someone else is in a life threatening situation please call 000 immediately.</p>
+    </div>
+    </div>
+</div>
+</div>
     
-<!-- First Question Path A and B -->
+    <div class="get_started">
     <div class="container">
         <div class="row">
-            <div class="twelve column" style="margin-top: 25%" align="center">
-                <h1>I want information for</h1>
+            <div class="twelve column" align="center">
+                <a  class="showSingle" target="11"><h2>Get Started</h2></a>
             </div>
         </div>
     </div>
+    </div>
     
+<div class="buttons">
+    
+<!-- First Question Path A and B -->
+        <div id="div11" class="targetDiv">
+    <div class="first_question">
+    <div class="container">
+        <div class="row">
+            <div class="twelve column" align="center">
+                <h1 class="first_question">I want information for</h1>
+            </div>
+        </div>
+    </div>
+    </div>
 <!-- First Question Answer Path A and B -->
+    <div class="first_answer">
     <div class="container">
         <div class="row">
             <!--- First Answer Path A.1 -->
-            <div class="one-half column" style="margin-top: 25%" align="center">
-                <a  class="showSingle" target="1">Survivors</a>
+            <div class="one-half column" align="center">
+                <a  class="showSingle" target="1"><h2>Survivors</h2></a>
             </div>
             <!--- First Answer Path B.2 -->
-            <div class="one-half column" style="margin-top: 25%" align="center">
-                <a  class="showSingle" target="2">Supporters</a>
+            <div class="one-half column" align="center">
+                <a  class="showSingle" target="2"><h2>Supporters</h2></a>
             </div>
         </div>
+    </div>
+    </div>
+    </div>
         
         <!--- Target Answer Path A.1 -->
-            <div id="div1" class="targetDiv">
+    <div id="div1" class="targetDiv">
+    <div class="second_question_a">
+    <div class="container"> 
                     
         <!--- Second Question Path A -->
         <div class="row">
-            <div class="twelve column" style="margin-top: 25%" align="center">
+            <div class="twelve column" align="center">
                 <h1>I would like to</h1>
             </div>
-        </div>     
+            </div>  
+    </div>
+    </div>
+        
+    <div class="second_answer_a">
+    <div class="container">
         <div class="row">
             <!--- Second Answer Path A.3 --> 
-            <div class="one-third column" style="margin-top: 25%" align="center">
-                <a  class="showSingle" target="3">Report an Incident</a>
-            </div>
-            <!-- Second Answer Path A.4 -->
-            <div class="one-third column" style="margin-top: 25%" align="center">
-                <a  class="showSingle" target="4">Report an Incident Anonymously</a>
+            <div class="one-half column" align="center">
+                <a class="showSingle" target="10"><h2>Report an<br>Incident</h2></a>
             </div>
             <!-- Second Answer Path A.5 -->
-            <div class="one-third column" style="margin-top: 25%" align="center">
-                <a  class="showSingle" target="5">Seek Support</a>
+            <div class="one-half column" align="center">
+                <a  class="showSingle" target="5"><h2>Seek Support & Services</h2></a>
             </div> 
         </div>            
-            </div>
+    </div>
+    </div>
+    </div>
         <!--- Close Target Answer Path A -->
-    
+        <div id="div10" class="targetDiv">
+        <div class="subone_question">
+    <div class="container">
+        <div class="row">
+            <div class="twelve column" align="center">
+                <h1 class="first_question">How would you like to report?</h1>
+            </div>
+        </div>
+    </div>
+    </div>
+            <div class="answer_four_a">
+            <div class="container">
+                <div class="row">
+                    <div class="one-half column" align="center">
+                        <a  class="showSingle" target="3"><h2>Report an Incident</h2></a>
+                    </div>
+                    <div class="one-half column" align="center">
+                        <a  class="showSingle" target="4"><h2>Report Anonymously</h2></a>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
     <!-- Path A Content -->
         <!-- Second Answer Path A.3 Content Open-->
             <!-- Survivor Form -->
-            <div id="div3" class="targetDiv">
-                <form>
-                <div class="row" style="margin-top: 10%">
-                    <div class="twelve columns" align="center">
-                        <h3 id="head1"><a name="survivorreport">Reporting Form for Survivors</a></h3>
-                            <p>Please use this form if you are reporting an incident that has occured to you and you wish to report with your name.</p>
+    <div id="div3" class="targetDiv">
+    <div class="a_report_intro">
+    <div class="container">
+        <div class="row">
+            <div class="twelve columns" align="center">
+                        <h3 id="a_report">Reporting Form for Survivors</h3>
+                            <p>Please use this form if you are reporting an incident that has occured to you and you wish to report with your name. This report will be submitted to the University.</p>
                             <p>Should you require any assistance in the completion of this form please contact UC Welfare at Welfare@canberra.edu.au and the team will be able to assist you.</p>
-                    </div>    
-                </div>
+            </div>    
+        </div>
+    </div>
             <!-- Personal details form section -->
-                <div class="row">
-                    <div class="twelve column" style="margin-top: 10%" align="center">
+        <form>
+            <div class="a_report_section_one">
+                <div class="container">
+            <div class="row">
+            <div class="twelve column" style="margin-top: 10%" align="center">
                         <h4>Personal Details</h4>
-                    </div>
-                </div>
+            </div>
+            </div>
                 <div class="row" style="margin-top: 5%">
                     <div class="six columns">
-                        <label for="nameInput">What is your name?</label>
-                        <input class="u-full-width" type="name" placeholder="Name" id="nameInput">
+                        <label for="textInput">What is your name?</label>
+                        <input class="u-full-width" type="text" placeholder="Name" id="textInput">
                     </div>
                     <div class="six columns">
                         <label for="emailInput">What is your email?</label>
@@ -172,7 +280,11 @@
                           </select>
                         </div>
                 </div>
+            </div>
+            </div>
             <!-- Incident details form section -->
+            <div class="a_report_section_two">
+                <div class="container">
                     <div class="row">
                     <div class="twelve column" style="margin-top: 10%" align="center">
                         <h4>Incident Details</h4>    
@@ -211,9 +323,19 @@
                             <input class="u-full-width" type="date" placeholder="Date" id="dateInput">
                         </div>
                         <div class="six columns">
+                            <label for="monthInput">What month did the incident occur in?</label>
+                            <input class="u-full-width" type="month" placeholder="Date" id="monthInput">
+                        </div>
+                    </div>
+                        <div class="row" style="margin-top: 2%">
+                    <div class="six columns">
+                        <label for="textInput">What year did the incident occur in?</label>
+                        <input class="u-full-width" type="text" placeholder="Year" id="textInput">
+                    </div>
+                        <div class="six columns">
                             <label for="timeInput">What time did the incident occur?</label>
                             <input class="u-full-width" type="time" placeholder="Time" id="timeInput">
-                        </div>  
+                        </div> 
                     </div>
                     <div class="row" style="margin-top: 2%">
                         <div class="six columns">
@@ -257,7 +379,12 @@
                             <textarea class="u-full-width" placeholder="Describe the incident here" id="descriptionMessage"></textarea>
                         </div>  
                     </div>
+                </div>
+            </div>
+            
             <!-- Support services form section -->
+            <div class="a_report_section_three">
+                <div class="container">
                     <div class="row">
                         <div class="twelve column" style="margin-top: 10%" align="center">
                             <h4>Support Services</h4>
@@ -279,7 +406,11 @@
                             </select>
                         </div>
                     </div>
+                </div>
+                </div>
             <!-- Submission form section -->
+            <div class="a_report_section_four">
+                <div class="container">
                 <div class="row" style="margin-top: 10%">
                     <div class="twelve columns" align="center">
                         <label class="example-send-yourself-copy">
@@ -293,25 +424,35 @@
                     <input class="button-primary" type="submit" value="Submit">
                     </div>
                 </div>
-            </form>        
-            </div>
+                </div>
+                </div>
+            </form>          
+    </div>
+    </div>
         <!-- Second Answer Path A.3 Content Close-->
                 
         <!-- Second Answer Path A.4 Content Open-->
             <!-- Anon Survivor Form -->
-            <div id="div4" class="targetDiv">
-        =
-                <div class="row" style="margin-top: 10%">
+    <div id="div4" class="targetDiv">
+    <div class="a_anon_report">
+    <div class="a_report_intro">
+    <div class="container">
+                <div class="row">
                     <div class="twelve columns" align="center">
                         <h3>Anonymous Reporting Form for Survivors</h3>
-                            <p>Please use this form if you are reporting an incident that has occured to you and you want to report anonymously. Please note that this form will still ask for an email address so that you can be contacted with support services and/or we require further information. You may enter a third-party email if you wish.</p>
+                            <p>Please use this form if you are reporting an incident that has occured to you and you want to report anonymously. This report will be submitted to the University.
+                            <p>Please note that this form will still ask for an email address so that you can be contacted with support services and/or we require further information. You may enter a third-party email if you wish.</p>
                             <p>Should you require any assistance in the completion of this form please contact UC Welfare at Welfare@canberra.edu.au and the team will be able to assist you.</p>
                     </div>    
                 </div>
+        </div>
+        </div>
             <!-- Personal details form section -->
+        <form>
+            <div class="a_report_section_one">
+                <div class="container">
                 <div class="row">
-                    <form>
-                    <div class="twelve column" style="margin-top: 10%" align="center">
+                    <div class="twelve columns" style="margin-top: 10%" align="center">
                         <h4>Personal Details</h4>
                     </div>
                 </div>
@@ -320,13 +461,13 @@
                         <label for="emailInput">Please provide an email contact</label>
                         <input class="u-full-width" type="email" placeholder="Email" id="emailInput">
                     </div>
-                </div>
                     <div class="six columns">
                         <label for="thirdpartyInput">Is this your email or a third-party contact?</label>
                         <select class="u-full-width" id="thirdpartyInput">
                             <option value="Option 1">Personal</option>
                             <option value="Option 2">Third-party</option>
                         </select>
+                    </div>
                     </div>
                 <div class="row" style="margin-top: 2%">
                         <div class="six columns">
@@ -345,8 +486,12 @@
                           </select>
                         </div>
                 </div>
+                </div>
+            </div>
             <!-- Incident details form section -->
-                    <div class="row">
+            <div class="a_report_section_two">
+            <div class="container">     
+            <div class="row">
                     <div class="twelve column" style="margin-top: 10%" align="center">
                         <h4>Incident Details</h4>    
                     </div>
@@ -384,9 +529,19 @@
                             <input class="u-full-width" type="date" placeholder="Date" id="dateInput">
                         </div>
                         <div class="six columns">
+                            <label for="monthInput">What month did the incident occur in?</label>
+                            <input class="u-full-width" type="month" placeholder="Date" id="monthInput">
+                        </div>
+                    </div>
+                        <div class="row" style="margin-top: 2%">
+                    <div class="six columns">
+                        <label for="textInput">What year did the incident occur in?</label>
+                        <input class="u-full-width" type="text" placeholder="Year" id="textInput">
+                    </div>
+                        <div class="six columns">
                             <label for="timeInput">What time did the incident occur?</label>
                             <input class="u-full-width" type="time" placeholder="Time" id="timeInput">
-                        </div>  
+                        </div> 
                     </div>
                     <div class="row" style="margin-top: 2%">
                         <div class="six columns">
@@ -430,8 +585,12 @@
                             <textarea class="u-full-width" placeholder="Describe the incident here" id="descriptionMessage"></textarea>
                         </div>  
                     </div>
+                </div>
+            </div>
             <!-- Support services form section -->
-                    <div class="row">
+            <div class="a_report_section_three">
+            <div class="container">        
+            <div class="row">
                         <div class="twelve column" style="margin-top: 10%" align="center">
                             <h4>Support Services</h4>
                         </div>    
@@ -452,7 +611,11 @@
                             </select>
                         </div>
                     </div>
+                </div>
+            </div>
             <!-- Submission form section -->
+            <div class="a_report_section_four">
+            <div class="container">
                 <div class="row" style="margin-top: 10%">
                     <div class="twelve columns" align="center">
                         <label class="example-send-yourself-copy">
@@ -466,23 +629,41 @@
                     <input class="button-primary" type="submit" value="Submit">
                     </div>
                 </div>
-            </form>
+                </div>
             </div>
-        
+            </form>
+    </div>
+    </div>
+    </div>
         <!-- Second Answer Path A.4 Content Close-->
                 
         <!-- Second Answer Path A.5 Content Open-->
             <div id="div5" class="targetDiv">
+                <div class="subtwo_question">
+    <div class="container">
+        <div class="row">
+            <div class="twelve column" align="center">
+                <h1 class="first_question">What would you like to learn about?</h1>
+            </div>
+        </div>
+    </div>
+    </div>
+            <div class="a_question_three">
+            <div class="container">
                 <div class="row">
-                    <div class="one-half column" style="margin-top: 10%" align="center">
-                        <a  class="showSingle" target="8">Support Services</a>
+                    <div class="one-half column" align="center">
+                        <a  class="showSingle" target="8"><h2>Support Services</h2></a>
                     </div>
-                    <div class="one-half column" style="margin-top: 10%" align="center">
-                        <a  class="showSingle" target="9">Common Processes</a>
+                    <div class="one-half column" align="center">
+                        <a  class="showSingle" target="9"><h2>Common Processes</h2></a>
                     </div>
                 </div>
             </div>
+            </div>
+            </div>
                 <div id="div8" class="targetDiv">
+                <div class="a_services">
+                <div class="container">
                     <div class="row">
                         <div class="twelve column" style="margin-top: 10%" align="center">
                         <h3>Support Services</h3>
@@ -491,6 +672,7 @@
                         <p>If you are in immediate danger and require urgent assistance, we encourage you to call '000'. If you are on-campus, you can also call campus security on 6201 2222.</p>
                         </div>
                     </div>
+                
                     <div class="twelve column" style="margin-top: 10%" align="center">
                         <table class="u-full-width">
                             <thead>
@@ -502,58 +684,58 @@
                                     <th>Website</th>
                                     <th>Crisis Service</th>
                                     <th>Ongoing Support</th>
-                                    <th>Connect Anonymously</th>
+                                    <th>Anonymous</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td>UC Security</td>
                                     <td>Security staff will liaise with police, ambulance and/or UC support services as necessary.</td>
-                                    <td>(02) 6201 2222</td>
+                                    <td>(02)62012222</td>
                                     <td>security@canberra.edu.au</td>
                                     <td><a href="https://www.canberra.edu.au/safe-community/security">www.canberra.edu.au/safe-community/security</a></td>
-                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10003;</td>
-                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10006;</td>
-                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10006;</td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;">&#10003;</td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;">&#10006;</td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;">&#10006;</td>
                                 </tr>
                                 <tr>
                                     <td>UC Medical and Counselling</td>
                                     <td>Provides a range of health, well-being and counselling support services to staff, students and visitors on-campus.</td>
-                                    <td>(02) 6201 2351</td>
+                                    <td>(02)62012351</td>
                                     <td>n/a</td>
                                     <td><a href="https://www.canberra.edu.au/on-campus/health-and-support/medical-counselling">www.canberra.edu.au/on-campus/health-and-support/medical-counselling</a></td>
-                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10003;</td>
-                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10003;</td>
-                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10006;</td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;">&#10003;</td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;">&#10003;</td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;">&#10006;</td>
                                 </tr>
                                 <tr>
                                     <td>University Crisis Line</td>
                                     <td>Seek immediate relief from emotional distress and explore coping strategies, particularly for out of hours support.</td>
-                                    <td>Call: 1300 271 790 Text: 0488 884 227</td>
+                                    <td>Call: 1300271790 Text: 0488884227</td>
                                     <td>n/a</td>
                                     <td><a href="https://www.lifeline.org.au/">www.lifeline.org.au/</a></td>
-                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10003;</td>
-                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10003;</td>
-                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10003;</td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;">&#10003;</td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;">&#10003;</td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;">&#10003;</td>
                                 </tr>
                                 <tr>
                                     <td>Emplopyee Assistance Program (EAP)</td>
                                     <td>An independent and confidential counselling service available to staff of the University and their immediate families.</td>
-                                    <td>1300 687 327</td>
+                                    <td>1300687327</td>
                                     <td>info@convergeintl.com.au</td>
                                     <td><a href="https://www.convergeinternational.com.au/">www.convergeinternational.com.au/</a></td>
-                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10006;</td>
-                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10003;</td>
-                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10006;</td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;">&#10006;</td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;;">&#10003;</td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;;">&#10006;</td>
                                 </tr>
                                 <tr>
                                     <td>Student Welfare</td>
                                     <td>Can guide you through any personal, financial or study issues through support, advice and referral to other agencies.</td>
-                                    <td>(02) 6206 8841</td>
+                                    <td>(02)62068841</td>
                                     <td>Welfare@canberra.edu.au</td>
                                     <td><a href="https://www.canberra.edu.au/about-uc/widening-participation/welfare">www.canberra.edu.au/about-uc/widening-participation/welfare</a></td>
-                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10003;</td>                           <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10003;</td>
-                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10006;</td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;">&#10003;</td>                           <td style="font-size:100%;text-align:center; font-weight:bold;">&#10003;</td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;">&#10006;</td>
                                 </tr>
                                 <tr>
                                     <td>UC Multi-Faith Centre</td>
@@ -561,8 +743,8 @@
                                     <td>n/a</td>
                                     <td>chaplaincy@canberra.edu.au</td>
                                     <td>n/a</td>
-                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10006;</td>                           <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10003;</td>
-                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10006;</td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;">&#10006;</td>                           <td style="font-size:100%;text-align:center; font-weight:bold;">&#10003;</td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;">&#10006;</td>
                                 </tr>
                                 <tr>
                                     <td>UCSRC Womens Officer</td>
@@ -570,17 +752,17 @@
                                     <td>n/a</td>
                                     <td>womens@ucsrc.org.au</td>
                                     <td>n/a</td>
-                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10006;</td>                           <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10003;</td>
-                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10006;</td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;">&#10006;</td>                           <td style="font-size:100%;text-align:center; font-weight:bold;">&#10003;</td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;">&#10006;</td>
                                 </tr>
                                 <tr>
                                     <td>Service Assisting Male Survivors of Sexual Assualt (SAMSSA)</td>
                                     <td>Counselling and support to men over the age of 16 and their supporters in the ACT and surrounding regions.</td>
-                                    <td>Call: (02) 6247 2525. Text: 0488 586 518</td>
+                                    <td>Call: (02)62472525. Text:0488586518</td>
                                     <td>samssa@samssa.org.au</td>
                                     <td><a href="www.samssa.org.au/">www.samssa.org.au/</a></td>
-                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10003;</td>                           <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10003;</td>
-                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10003;</td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;">&#10003;</td>                           <td style="font-size:100%;text-align:center; font-weight:bold;">&#10003;</td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;">&#10003;</td>
                                 </tr>
                                 <tr>
                                     <td>SAMSN</td>
@@ -588,35 +770,35 @@
                                     <td>1800472676</td>
                                     <td>support@samsn.org.au</td>
                                     <td><a href="www.samsn.org.au/">www.samsn.org.au/</a></td>
-                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10006;</td>                           <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10003;</td>
-                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10003;</td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;">&#10006;</td>                           <td style="font-size:100%;text-align:center; font-weight:bold;">&#10003;</td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;">&#10003;</td>
                                 </tr>
                                 <tr>
                                     <td>UniLodge</td>
                                     <td>Residential Advisors and staff are able to assist with crisis relating to on-campus accomodation.</td>
-                                    <td>UC Lodge: 61 2 6110 4000. Cooper Lodge: 61 2 6109 4200. Weeden Lodge: 61 2 6113 5000.</td>
+                                    <td>UC Lodge: 61261104000. Cooper Lodge: 61261094200. Weeden Lodge: 61261135000.</td>
                                     <td>n/a</td>
                                     <td>n/a</td>
-                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10003;</td>                           <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10006;</td>
-                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10006;</td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;">&#10003;</td>                           <td style="font-size:100%;text-align:center; font-weight:bold;">&#10006;</td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;">&#10006;</td>
                                 </tr>
                                 <tr>
                                     <td>Crisis Assessment and Treatment Team (CATT)</td>
                                     <td>Provides a highly accessible and responsive acute mental health assessment and treatment service in the most appropriate setting. </td>
-                                    <td>02 6205 1065</td>
+                                    <td>0262051065</td>
                                     <td>n/a</td>
                                     <td><a href="http://health.act.gov.au/our-services/mental-health">health.act.gov.au/our-services/mental-health</a></td>
-                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10003;</td>                           <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10003;</td>
-                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10003;</td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;">&#10003;</td>                           <td style="font-size:100%;text-align:center; font-weight:bold;">&#10003;</td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;">&#10003;</td>
                                 </tr>
                                 <tr>
                                     <td>Canberra Rape Crisis Centre</td>
                                     <td>Counselling services and advocacy for survivors and supporters.</td>
-                                    <td>6247 2525</td>
+                                    <td>62472525</td>
                                     <td>crcc@crcc.org.au</td>
                                     <td><a href="https://www.crcc.org.au/">www.crcc.org.au/</a></td>
-                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10003;</td>                           <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10003;</td>
-                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10003;</td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;">&#10003;</td>                           <td style="font-size:100%;text-align:center; font-weight:bold;">&#10003;</td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;">&#10003;</td>
                                 </tr>
                                 <tr>
                                     <td>Domestic Violence Crisis Service (DVCS)</td>
@@ -624,15 +806,20 @@
                                     <td>0262800900</td>
                                     <td>crisis@dvcs.org.au</td>
                                     <td><a href="https://dvcs.org.au/">dvcs.org.au/</a></td>
-                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10003;</td>                           <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10003;</td>
-                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10003;</td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;">&#10003;</td>                           <td style="font-size:100%;text-align:center; font-weight:bold;">&#10003;</td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;">&#10003;</td>
                                 </tr>
                             </tbody>
                         </table> 
                     </div>
                 </div>
+                </div>
+                </div>
+    
                 <div id="div9" class="targetDiv">
-                <div class="row">
+                <div class="a_common_process">
+                <div class="container">
+                    <div class="row">
                     <div class="one-half column" style="margin-top: 10%" align="left">
                         <h3>Reporting to the Police</h3>
                         <p>It is your right to contact police if you choose. You can decide if you would like to make a report or not, but you can contact police at any stage to speak to someone about what your options are regardless of your choice.</p>
@@ -653,6 +840,8 @@
                         <p>FAMSAC staff's main focus is your health and well being. They are the most knowledgeable about how sexual assault can impact a person and their goal is to focus on helping you become physically healthy again. FAMSAC staff are bound by strict confidentiality, and if the patient is over the age of 18, they are not obligated to pass your details on to police. FAMSAC records are kept separately from any other medical record. Other doctors and nurses in the The Canberra Hospital cannot access them without your permission and will not know you have attended FAMSAC unless you advise them.</p>
                         <p>If you do not wish to attend hospital you may seek medical assistance, such as counselling or STI tests, at UC Medical and Counselling.</p>
                     </div>
+                    </div>
+                </div>
                 </div>
                 </div>
         <!-- Second Answer Path A.5 Content Close-->
@@ -661,32 +850,42 @@
                 
         
         <!--- Target Answer Path B -->
-            <div id="div2" class="targetDiv">
+        <div id="div2" class="targetDiv">
+        <div class="second_question_b">
+        <div class="container">
                     
         <!--- Second Question Path B -->
         <div class="row">
-            <div class="twelve column" style="margin-top: 25%" align="center">
-                <h1>I want to</h1>
+            <div class="twelve column" align="center">
+                <h1>I would like to</h1>
             </div>
         </div>
+        </div>
+        </div>
+            
+        <div class="second_answer_b">
+        <div class="container">  
         <div class="row">
             <!--- Second Answer Path B.6 -->
-            <div class="one-half column" style="margin-top: 25%" align="center">
-                <a  class="showSingle" target="6">Report</a>
+            <div class="one-half column" align="center">
+                <a  class="showSingle" target="6"><h2>Report an <br>Incident</h2></a>
             </div>
 
             <!-- Second Answer Path B.7 -->
-            <div class="one-half column" style="margin-top: 25%" align="center">
-                <a  class="showSingle" target="7">Services</a>
+            <div class="one-half column"align="center">
+                <a  class="showSingle" target="7"><h2>Seek Support & Services</h2></a>
             </div>
         </div>
-                
+        </div>
+        </div>
     <!-- Path B Content -->
                 
         <!-- Second Answer Path B.6 Content Open-->
             <div id="div6" class="targetDiv">
+            <div class="b_report">
             <!-- Reporting form for supporters -->
-            <form>
+                <div class="a_report_intro">
+                    <div class="container">
                 <div class="row" style="margin-top: 10%">
                     <div class="twelve columns" align="center">
                         <h3>Reporting Form for Supporters</h3>
@@ -694,7 +893,12 @@
                             <p>Should you require any assistance in the completion of this form please contact UC Welfare at Welfare@canberra.edu.au and the team will be able to assist you.</p>
                     </div>    
                 </div>
+                    </div>
+                </div>
             <!-- Personal details form section -->
+                <form>
+                <div class="a_report_section_one">
+                    <div class="container">
                 <div class="row">
                     <div class="twelve column" style="margin-top: 10%" align="center">
                         <h4>Personal Details</h4>
@@ -702,8 +906,8 @@
                 </div>
                 <div class="row" style="margin-top: 5%">
                     <div class="six columns">
-                        <label for="nameInput">What is your name?</label>
-                        <input class="u-full-width" type="name" placeholder="Name" id="nameInput">
+                        <label for="textInput">What is your name?</label>
+                        <input class="u-full-width" type="text" placeholder="Name" id="textInput">
                     </div>
                     <div class="six columns">
                         <label for="emailInput">What is your email?</label>
@@ -728,7 +932,11 @@
                           </select>
                         </div>
                 </div>
+                    </div>
+                    </div>
             <!-- Incident details form section -->
+                    <div class="a_report_section_two">
+                        <div class="container">
                     <div class="row">
                     <div class="twelve column" style="margin-top: 10%" align="center">
                         <h4>Incident Details</h4>    
@@ -762,14 +970,24 @@
                         </div>
                     </div>
                     <div class="row" style="margin-top: 2%">
-                        <div class="six columns">
+                                               <div class="six columns">
                             <label for="dateInput">What date did the incident occur on?</label>
                             <input class="u-full-width" type="date" placeholder="Date" id="dateInput">
                         </div>
                         <div class="six columns">
+                            <label for="monthInput">What month did the incident occur in?</label>
+                            <input class="u-full-width" type="month" placeholder="Date" id="monthInput">
+                        </div>
+                    </div>
+                        <div class="row" style="margin-top: 2%">
+                    <div class="six columns">
+                        <label for="textInput">What year did the incident occur in?</label>
+                        <input class="u-full-width" type="text" placeholder="Year" id="textInput">
+                    </div>
+                        <div class="six columns">
                             <label for="timeInput">What time did the incident occur?</label>
                             <input class="u-full-width" type="time" placeholder="Time" id="timeInput">
-                        </div>  
+                        </div> 
                     </div>
                     <div class="row" style="margin-top: 2%">
                         <div class="six columns">
@@ -814,7 +1032,11 @@
                             <textarea class="u-full-width" placeholder="Describe the incident here" id="descriptionMessage"></textarea>
                         </div>  
                     </div>
+                        </div>
+                    </div>
             <!-- Support services form section -->
+                    <div class="a_report_section_three">
+                        <div class="container">
                     <div class="row">
                         <div class="twelve column" style="margin-top: 10%" align="center">
                             <h4>Support Services</h4>
@@ -836,7 +1058,11 @@
                             </select>
                         </div>
                     </div>
+                            </div>
+                    </div>
             <!-- Submission form section -->
+                    <div class="a_report_section_four">
+                        <div class="container">
                 <div class="row" style="margin-top: 10%">
                     <div class="twelve columns" align="center">
                         <label class="example-send-yourself-copy">
@@ -850,13 +1076,19 @@
                     <input class="button-primary" type="submit" value="Submit">
                     </div>
                 </div>
+                            </div>
+                    </div>
             </form>
             </div>
+            </div>
+    
             <!-- Second Answer Path B.6 Content Close-->
                     
             <!-- Second Answer Path B.7 Content Open -->
                     
                 <div id="div7" class="targetDiv">
+                <div class="b_services">
+                <div class="container">
                     <div class="row">
                         <div class="twelve column" style="margin-top: 10%" align="center">
                         <h3>Support Services</h3>
@@ -879,58 +1111,58 @@
                                     <th>Website</th>
                                     <th>Crisis Service</th>
                                     <th>Ongoing Support</th>
-                                    <th>Connect Anonymously</th>
+                                    <th>Anonymous</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td>UC Security</td>
                                     <td>Security staff will liaise with police, ambulance and/or UC support services as necessary.</td>
-                                    <td>(02) 6201 2222</td>
+                                    <td>(02)62012222</td>
                                     <td>security@canberra.edu.au</td>
                                     <td><a href="https://www.canberra.edu.au/safe-community/security">www.canberra.edu.au/safe-community/security</a></td>
-                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10003;</td>
-                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10006;</td>
-                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10006;</td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;">&#10003;</td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;">&#10006;</td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;">&#10006;</td>
                                 </tr>
                                 <tr>
                                     <td>UC Medical and Counselling</td>
                                     <td>Provides a range of health, well-being and counselling support services to staff, students and visitors on-campus.</td>
-                                    <td>(02) 6201 2351</td>
+                                    <td>(02)62012351</td>
                                     <td>n/a</td>
                                     <td><a href="https://www.canberra.edu.au/on-campus/health-and-support/medical-counselling">www.canberra.edu.au/on-campus/health-and-support/medical-counselling</a></td>
-                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10003;</td>
-                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10003;</td>
-                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10006;</td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;">&#10003;</td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;">&#10003;</td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;">&#10006;</td>
                                 </tr>
                                 <tr>
                                     <td>University Crisis Line</td>
                                     <td>Seek immediate relief from emotional distress and explore coping strategies, particularly for out of hours support.</td>
-                                    <td>Call: 1300 271 790 Text: 0488 884 227</td>
+                                    <td>Call: 1300271790 Text: 0488884227</td>
                                     <td>n/a</td>
                                     <td><a href="https://www.lifeline.org.au/">www.lifeline.org.au/</a></td>
-                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10003;</td>
-                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10003;</td>
-                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10003;</td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;">&#10003;</td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;">&#10003;</td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;">&#10003;</td>
                                 </tr>
                                 <tr>
                                     <td>Emplopyee Assistance Program (EAP)</td>
                                     <td>An independent and confidential counselling service available to staff of the University and their immediate families.</td>
-                                    <td>1300 687 327</td>
+                                    <td>1300687327</td>
                                     <td>info@convergeintl.com.au</td>
                                     <td><a href="https://www.convergeinternational.com.au/">www.convergeinternational.com.au/</a></td>
-                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10006;</td>
-                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10003;</td>
-                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10006;</td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;">&#10006;</td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;">&#10003;</td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;">&#10006;</td>
                                 </tr>
                                 <tr>
                                     <td>Student Welfare</td>
                                     <td>Can guide you through any personal, financial or study issues through support, advice and referral to other agencies.</td>
-                                    <td>(02) 6206 8841</td>
+                                    <td>(02)62068841</td>
                                     <td>Welfare@canberra.edu.au</td>
                                     <td><a href="https://www.canberra.edu.au/about-uc/widening-participation/welfare">www.canberra.edu.au/about-uc/widening-participation/welfare</a></td>
-                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10003;</td>                           <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10003;</td>
-                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10006;</td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;">&#10003;</td>                           <td style="font-size:100%;text-align:center; font-weight:bold;">&#10003;</td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;">&#10006;</td>
                                 </tr>
                                 <tr>
                                     <td>UC Multi-Faith Centre</td>
@@ -938,8 +1170,8 @@
                                     <td>n/a</td>
                                     <td>chaplaincy@canberra.edu.au</td>
                                     <td>n/a</td>
-                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10006;</td>                           <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10003;</td>
-                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10006;</td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;">&#10006;</td>                           <td style="font-size:100%;text-align:center; font-weight:bold;">&#10003;</td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;">&#10006;</td>
                                 </tr>
                                 <tr>
                                     <td>UCSRC Womens Officer</td>
@@ -947,17 +1179,17 @@
                                     <td>n/a</td>
                                     <td>womens@ucsrc.org.au</td>
                                     <td>n/a</td>
-                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10006;</td>                           <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10003;</td>
-                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10006;</td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;">&#10006;</td>                           <td style="font-size:100%;text-align:center; font-weight:bold;">&#10003;</td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;">&#10006;</td>
                                 </tr>
                                 <tr>
                                     <td>Service Assisting Male Survivors of Sexual Assualt (SAMSSA)</td>
                                     <td>Counselling and support to men over the age of 16 and their supporters in the ACT and surrounding regions.</td>
-                                    <td>Call: (02) 6247 2525. Text: 0488 586 518</td>
+                                    <td>Call: (02)62472525. Text: 0488586518</td>
                                     <td>samssa@samssa.org.au</td>
                                     <td><a href="www.samssa.org.au/">www.samssa.org.au/</a></td>
-                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10003;</td>                           <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10003;</td>
-                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10003;</td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;">&#10003;</td>                           <td style="font-size:100%;text-align:center; font-weight:bold;">&#10003;</td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;">&#10003;</td>
                                 </tr>
                                 <tr>
                                     <td>SAMSN</td>
@@ -965,35 +1197,35 @@
                                     <td>1800472676</td>
                                     <td>support@samsn.org.au</td>
                                     <td><a href="www.samsn.org.au/">www.samsn.org.au/</a></td>
-                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10006;</td>                           <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10003;</td>
-                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10003;</td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;">&#10006;</td>                           <td style="font-size:100%;text-align:center; font-weight:bold;">&#10003;</td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;">&#10003;</td>
                                 </tr>
                                 <tr>
                                     <td>UniLodge</td>
                                     <td>Residential Advisors and staff are able to assist with crisis relating to on-campus accomodation.</td>
-                                    <td>UC Lodge: 61 2 6110 4000. Cooper Lodge: 61 2 6109 4200. Weeden Lodge: 61 2 6113 5000.</td>
+                                    <td>UC Lodge: 61261104000. Cooper Lodge: 61261094200. Weeden Lodge: 61261135000.</td>
                                     <td>n/a</td>
                                     <td>n/a</td>
-                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10003;</td>                           <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10006;</td>
-                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10006;</td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;">&#10003;</td>                           <td style="font-size:100%;text-align:center; font-weight:bold;">&#10006;</td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;">&#10006;</td>
                                 </tr>
                                 <tr>
                                     <td>Crisis Assessment and Treatment Team (CATT)</td>
                                     <td>Provides a highly accessible and responsive acute mental health assessment and treatment service in the most appropriate setting. </td>
-                                    <td>02 6205 1065</td>
+                                    <td>0262051065</td>
                                     <td>n/a</td>
                                     <td><a href="http://health.act.gov.au/our-services/mental-health">health.act.gov.au/our-services/mental-health</a></td>
-                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10003;</td>                           <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10003;</td>
-                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10003;</td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;">&#10003;</td>                           <td style="font-size:100%;text-align:center; font-weight:bold;">&#10003;</td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;">&#10003;</td>
                                 </tr>
                                 <tr>
                                     <td>Canberra Rape Crisis Centre</td>
                                     <td>Counselling services and advocacy for survivors and supporters.</td>
-                                    <td>6247 2525</td>
+                                    <td>62472525</td>
                                     <td>crcc@crcc.org.au</td>
                                     <td><a href="https://www.crcc.org.au/">www.crcc.org.au/</a></td>
-                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10003;</td>                           <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10003;</td>
-                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10003;</td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;">&#10003;</td>                           <td style="font-size:100%;text-align:center; font-weight:bold;">&#10003;</td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;">&#10003;</td>
                                 </tr>
                                 <tr>
                                     <td>Domestic Violence Crisis Service (DVCS)</td>
@@ -1001,24 +1233,44 @@
                                     <td>0262800900</td>
                                     <td>crisis@dvcs.org.au</td>
                                     <td><a href="https://dvcs.org.au/">dvcs.org.au/</a></td>
-                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10003;</td>                           <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10003;</td>
-                                    <td style="font-size:100%;text-align:center; font-weight:bold;color:black;">&#10003;</td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;">&#10003;</td>                           <td style="font-size:100%;text-align:center; font-weight:bold;">&#10003;</td>
+                                    <td style="font-size:100%;text-align:center; font-weight:bold;">&#10003;</td>
                                 </tr>
                             </tbody>
                             </table> 
                         </div>
                     </div>
                 </div>
-                
+                </div>
+                </div>
             <!-- Second Answer Path B.7 Content Close-->
         <!-- Path B Content Close -->
                 
 
             </div>
+
+<!-- Footer -->
+<footer>
+
+<div class="footer">
+<div class="container">
+        <div class="row">
+        <div class="three columns" align="center">
+            <p>Tanaya Allen</p>    
+        </div>
+        <div class="three columns" align="center">
+            <p>11136 Illuminated Bits</p>    
+        </div>
+        <div class="three columns" align="center">
+            <p>Faculty of Arts and Design</p>    
+        </div>
+        <div class="three columns" align="center">
+            <p>University of Canberra 2020</p>    
         </div>
     </div>
-
-
+</div>
+</div>
+    </footer>
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>

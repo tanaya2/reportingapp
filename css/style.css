@@ -123,9 +123,14 @@ html {
 body {
   font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6;
-  font-weight: 400;
-  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #222; }
+  font-weight: 200;
+  font-family: "Verlag";
+  color: #414042; }
+p {
+    font-size: 1em;
+    font-weight: 200;
+    font-family: "Verlag Book"; 
+}
 
 
 /* Typography
@@ -158,9 +163,9 @@ p {
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
-  color: #1EAEDB; }
+  color: #ffffff; }
 a:hover {
-  color: #0FA0CE; }
+  color: #009abc; }
 
 
 /* Buttons
@@ -197,17 +202,17 @@ button:focus,
 input[type="submit"]:focus,
 input[type="reset"]:focus,
 input[type="button"]:focus {
-  color: #333;
-  border-color: #888;
+  color: #ffffff;
+  border-color: #009abc;
   outline: 0; }
 .button.button-primary,
 button.button-primary,
 input[type="submit"].button-primary,
 input[type="reset"].button-primary,
 input[type="button"].button-primary {
-  color: #FFF;
-  background-color: #33C3F0;
-  border-color: #33C3F0; }
+  color: #414042;
+  background-color: #ffffff;
+border-color: #ffffff;}
 .button.button-primary:hover,
 button.button-primary:hover,
 input[type="submit"].button-primary:hover,
@@ -218,9 +223,10 @@ button.button-primary:focus,
 input[type="submit"].button-primary:focus,
 input[type="reset"].button-primary:focus,
 input[type="button"].button-primary:focus {
-  color: #FFF;
-  background-color: #1EAEDB;
-  border-color: #1EAEDB; }
+  color: #414042;
+  background-color: #009abc;
+  border-color: #009abc; 
+    color: #ffffff;}
 
 
 /* Forms
@@ -232,15 +238,21 @@ input[type="text"],
 input[type="tel"],
 input[type="url"],
 input[type="password"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+
 textarea,
 select {
-  height: 38px;
+  height: 40px;
   padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
-  background-color: #fff;
-  border: 1px solid #D1D1D1;
-  border-radius: 4px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 2px;
   box-shadow: none;
-  box-sizing: border-box; }
+  box-sizing: border-box; 
+font-family: "Verlag Light";
+}
 /* Removes awkward default styles on some inputs for iOS */
 input[type="email"],
 input[type="number"],
@@ -254,9 +266,10 @@ textarea {
      -moz-appearance: none;
           appearance: none; }
 textarea {
-  min-height: 65px;
+  min-height: 150px;
   padding-top: 6px;
-  padding-bottom: 6px; }
+  padding-bottom: 6px; 
+font-family: "Verlag Light";}
 input[type="email"]:focus,
 input[type="number"]:focus,
 input[type="search"]:focus,
@@ -266,7 +279,7 @@ input[type="url"]:focus,
 input[type="password"]:focus,
 textarea:focus,
 select:focus {
-  border: 1px solid #33C3F0;
+  border: 1px solid #414042;
   outline: 0; }
 label,
 legend {
@@ -282,15 +295,16 @@ input[type="radio"] {
 label > .label-body {
   display: inline-block;
   margin-left: .5rem;
+    font-family: "Verlag Light";
   font-weight: normal; }
 
 
 /* Lists
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 ul {
-  list-style: circle inside; }
+  list-style: square; }
 ol {
-  list-style: decimal inside; }
+  list-style: square; }
 ol, ul {
   padding-left: 0;
   margin-top: 0; }
@@ -299,7 +313,8 @@ ul ol,
 ol ol,
 ol ul {
   margin: 1.5rem 0 1.5rem 3rem;
-  font-size: 90%; }
+  font-size: 90%; 
+font-family: "Verlag Light";}
 li {
   margin-bottom: 1rem; }
 
@@ -326,7 +341,7 @@ th,
 td {
   padding: 12px 15px;
   text-align: left;
-  border-bottom: 1px solid #E1E1E1; }
+  border-bottom: 1px solid #006c91; }
 th:first-child,
 td:first-child {
   padding-left: 0; }
@@ -394,8 +409,35 @@ hr {
 
 /* Start Personalised Code
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* Font */
+@font-face {font-family: "Verlag"; src: url("//db.onlinewebfonts.com/t/9c6548c5500714092f1d1e2f7e3c58cc.eot"); src: url("//db.onlinewebfonts.com/t/9c6548c5500714092f1d1e2f7e3c58cc.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/9c6548c5500714092f1d1e2f7e3c58cc.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/9c6548c5500714092f1d1e2f7e3c58cc.woff") format("woff"), url("//db.onlinewebfonts.com/t/9c6548c5500714092f1d1e2f7e3c58cc.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/9c6548c5500714092f1d1e2f7e3c58cc.svg#Verlag") format("svg"); }
 
-/* Header Styles */
+/* Start Header Styles */
+/* Header */
+header {
+    background-color: #00a9ce;
+    text-align: left;
+    color: #ffffff;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    
+}
+header a:link{
+    text-decoration: none;
+}
+
+header a:hover {
+    color: #006c91;
+}
+
+header .nav_lines {
+    padding-left: 4%;
+}
+
+header .header_title {
+    padding-left: 10%;
+    margin-top: 1%
+}
 
 /* Navigation */
 .overlay {
@@ -405,7 +447,8 @@ hr {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: whitesmoke;
+  background-color: #006c91;
+    opacity:0.95;
   overflow-x: hidden;
   transition: 0.8s;
 }
@@ -421,13 +464,13 @@ hr {
   padding: 8px;
   text-decoration: none;
   font-size: 22px;
-  color: #152125;
+  color: #ffffff;
   display: block;
   transition: 0.3s;
 }
 
 .overlay a:hover, .overlay a:focus {
-  color: lightblue;
+  color: #00a9ce;
 }
 
 .overlay .closebtn {
@@ -455,9 +498,10 @@ hr {
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: white; 
+    text-shadow: #414042;
+    color: #ffffff; 
     
-    background-image: url('https://images.unsplash.com/photo-1523484404550-3c2d73d5bc60?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2104&q=80');
+    background-image: url("images/landing.png");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -471,10 +515,10 @@ hr {
     margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
-    color: white;
+    color: #ffffff;
     text-decoration: none;
-    font-size: 1em;
-    border: 1.5px solid white;
+    font-size: 1.2em;
+    border: 2px solid #ffffff;
     border-radius: 2px;
 }
 
@@ -486,6 +530,339 @@ hr {
  display: none;
 }
 
+/* End Header Styles */
+
+/* Start Heading Styles */
+h1 {
+    font-size: 100px;   
+}
+
+h2 {
+    font-size: 50px;
+    text-decoration-color: #ffffff;
+}
+/* End Heading Styles */
+
+/* Start Introduction Styles */
+div.introduction  {
+    background-color: #ffffff;
+    padding-bottom: 10%;
+    text-align: center;   
+}
+
+div.introduction h3 {
+    font-size: 40px;
+    color: #006c91;
+}
+
+div.introduction p {
+    padding-top: 10px;
+    font-size: 20px;
+    color: #414042;
+}
+
+div.get_started {
+    background-color: #006c91;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-decoration-color: #414042;
+}
+/* End Introduction Styles */
+
+/* Start  Question and Answer Styles */
+div.first_question {
+    background-color: #ffffff;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;   
+}
+
+div.first_answer {
+    background: linear-gradient(45deg, #006c91 50%, #92d6e3 50%);
+    padding-top: 10%;
+    padding-bottom: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;  
+}
+
+div.second_question_a {
+    background-color: #ffffff;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
+}
+
+div.second_answer_a {
+    background: linear-gradient(45deg, #006c91 50%, #92d6e3 50%);
+    padding-top: 10%;
+    padding-bottom: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
+}
+
+div.subone_question {
+    background: #ffffff;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
+}
+
+div.answer_four_a{
+    background: linear-gradient(45deg, #006c91 50%, #92d6e3 50%);
+    padding-top: 10%;
+    padding-bottom: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;  
+}
+
+div.second_question_b {
+    background-color: #ffffff;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
+}
+
+div.second_answer_b {
+    background: linear-gradient(45deg, #006c91 50%, #92d6e3 50%);
+    padding-top: 10%;
+    padding-bottom: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
+}
+
+div.subtwo_question {
+    background: #ffffff;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
+}
+div.second_answer_b {
+    background: linear-gradient(45deg, #006c91 50%, #92d6e3 50%);
+    padding-top: 10%;
+    padding-bottom: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
+}
+div.a_question_three {
+    background: linear-gradient(45deg, #006c91 50%, #92d6e3 50%);
+    padding-top: 10%;
+    padding-bottom: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
+}
+/* End Second Question and Answer Styles/
+
+/* Start Report Styles */
+
+/* Report Intro */
+div.a_report_intro h3 {
+    font-style: "Verlag";
+    padding-top: 10%;
+    padding-bottom: 2%;
+}
+div.a_report_intro p {
+    background-color: #ffffff;
+    font-family: "Verlag Book";
+    font-size: 18px;
+    padding-bottom: 4%;
+}
+
+/* Section 1 */
+div.a_report_section_one {
+    background-color: #92d6e3;
+    padding-bottom: 8%;
+    font-family: "Verlag Light";
+    font-size: 18px; 
+}
+
+div.a_report_section_one select {
+
+  background-color: #ffffff;
+  border: 1px solid #92d6e3;
+  border-radius: 2px;
+  box-shadow: none;
+  box-sizing: border-box; 
+    }
+
+div.a_report_section_one textarea {
+background-color: #ffffff;
+    }
+
+div.a_report_section_one h4 {
+    font-family: "Verlag";
+}
+
+/* Section Two */
+div.a_report_section_two {
+    background-color: #006c91;
+    padding-bottom: 8%;
+    font-family: "Verlag Light";
+    font-size: 18px; 
+    color: #ffffff;
+}
+
+div.a_report_section_two select {
+
+  background-color: #ffffff;
+    color: #414042;
+    }
+
+div.a_report_section_two textarea {
+background-color: #ffffff;
+    }
+
+div.a_report_section_two date {
+    color: #414042;
+}
+
+div.a_report_section_two month {
+    color: #414042;
+}
+
+div.a_report_section_two h4 {
+    font-family: "Verlag";
+}
+
+/* Section Three*/
+
+div.a_report_section_three {
+    background-color: #92d6e3;
+    padding-bottom: 8%;
+    font-family: "Verlag Light";
+    font-size: 18px; 
+}
+
+div.a_report_section_three select {
+
+  background-color: #ffffff; 
+    }
+
+div.a_report_section_three h4 {
+    font-family: "Verlag";
+}
+
+/* Section Four  */
+div.a_report_section_four {
+    background-color: #006c91;
+    padding-top: 2%;
+    padding-bottom: 4%;
+    font-family: "Verlag Light";
+    font-size: 18px; 
+    color: #ffffff;
+}
+/* End Report Styles */
+
+/* Start Services Styles */
+div.a_services {
+    background-color: #ffffff;
+    font-family: "Verlag Book";
+}
+
+div.a_services p {
+    font-family: "Verlag Book";
+    font-size: 18px;
+    color: #414042;
+}
+
+div.a_services h3 {
+    font-family: "Verlag";
+}
+
+th {
+    background-color: #92d6e3;
+    text-align: left;
+    font-size: 18px; 
+    color: #414042;
+    border-bottom: none;
+}
+
+tr a {
+  color: #414042; }
+
+tr a:hover {
+  color: #009abc; }
+
+tr:hover {
+    background-color: #006c91;
+    color: #ffffff;
+}
+
+tr:hover a {
+    color: #ffffff;
+}
+tr:hover a:hover {
+    color: #009abc;
+}
+
+
+div.b_services {
+    background-color: #ffffff;
+    font-family: "Verlag Book";
+}
+
+div.b_services p {
+    font-family: "Verlag Book";
+    font-size: 18px;
+    color: #414042;
+}
+
+div.b_services h3 {
+    font-family: "Verlag";
+}
+
+/* End Services Styles */
+
+/* Start Process Styles */
+div.a_common_process {
+    background: #ffffff;
+    padding-bottom: 5%;
+}
+
+div.a_common_process h3 {
+    font-style: "Verlag";
+    padding-bottom: 2%;
+}
+
+div.a_common_process p {
+    font-style: "Verlag Book";
+    font-size: 18px;
+    color: #414042;
+}
+
+div.a_common_process ul {
+        font-family: "Verlag Book";
+    font-size: 16px;
+    color: #414042;
+    padding-left: 8%;
+    padding-right: 5%;
+}
+
+/* End Process Styles */
+
+/* Start Footer Styles */
+div.footer {
+    background-color: #414042;
+    color: #ffffff;
+    padding-top: 1%;
+    font-size: 16px;
+}
+/* End Footer Styles */
 
 /* End Personalised Code
 
