@@ -240,9 +240,13 @@ input[type="tel"],
 input[type="url"],
 input[type="password"],
 input[type="date"],
-input[type="month"],
 input[type="time"],
-
+time {
+    color: #414042;
+}
+date {
+    color: #414042;
+}
 textarea,
 select {
   height: 40px;
@@ -743,9 +747,10 @@ div.a_report_section_two date {
     color: #414042;
 }
 
-div.a_report_section_two month {
-    color: #414042;
+div.a.report_section_two time {
+   color: #414042 
 }
+
 
 div.a_report_section_two h4 {
     font-family: "Verlag";
